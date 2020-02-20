@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "Happy Jekylling!"
+title: "Keto Life Coach"
 ---
 
-## You're ready to go!
+## Keto Life Coach
 
-Start developing your Jekyll website.
+Coming very soon!
