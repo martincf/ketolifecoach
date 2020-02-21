@@ -1,9 +1,146 @@
-$backgroundColor: #ffffff;
-$bodyColor: #000000;
-$bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "mixins",
+        "colours";
+
+$backgroundColor: $brandcolor3;
+$bodyColor: #222;
+$bodyFont: campaign, "Helvetica Neue", sans-serif;
 
 body {
   background: $backgroundColor;
   color: $bodyColor;
   font-family: $bodyFont;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+h1, h2, h3, h4, h5, h6, strong, b {
+  font-weight: 700;
+}
+.header {
+  margin: 0 0 50px;
+}
+.brand {
+  text-align: center;
+  max-width: 21%;
+  min-width: 250px;
+  margin: 0 auto;
+  padding: 25px 0;
+  background-color: $brandcolor1;
+}
+.brand--logo {
+  max-width: 20%;
+  min-width: 200px;
+}
+.strapline {
+  font-weight: 500;
+  font-size: .9em;
+  text-transform: uppercase;
+  text-align: center;
+  color: $brandcolor2;
+  margin: 25px auto 0;
+  max-width: 30%;
+  min-width: 300px;
+}
+.hero {
+  position: relative;
+  text-align: center;
+}
+.hero--title {
+  font-size: 3.25em;
+  max-width: 82%;
+  min-width: 600px;
+  margin: 0 auto 0;
+  line-height: 1.1;
+  padding: .25em .5em;
+  color: $brandcolor2;
+}
+.hero--text {
+  border-top: 12px solid $brandcolor2;
+  color: $brandcolor2;
+  max-width: 72%;
+  padding-top: 1em;
+  margin: 0 auto;
+  p {
+    margin: 0 0 1em;
+  }
+}
+.hero-ctas {
+  max-width: 65%;
+  margin: 25px auto;
+  background-color: $brandcolor3;
+}
+.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+.hero-ctas--cta {
+  background-color: $brandcolor2;
+  border-radius: 5px;
+  font-weight: 700;
+  width: 48%;
+  @include mq(medium) {
+    font-size: .95em;
+  };
+  @include mq(small) {
+    font-size: .8em;
+  };
+  @include mq(small) {
+    font-size: 1em;
+    width: 100%;
+
+  };
+  &:first-of-type {
+    margin-right: 2%;
+    @include mq(small) {
+      margin-right: 0;
+      margin-bottom: 25px;
+    };
+  }
+  a {
+    padding: 1em 0;
+    display: inline-block;
+    width: 100%;
+  }
+  a:link,a:visited {
+    color: $brandcolor3;
+  }
+}
+.hero--sticker {
+  background-color: $brandcolor5;
+  color: $brandcolor4;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  font-size: .7em;
+  display: block;
+  position: absolute;
+  right: 10%;
+  top: -25px;
+  line-height: 1.1;
+  em {
+    position: relative;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    font-style: normal;
+  }
+}
+.splash {
+  padding: 500px 9% 50px 9%;
+  background: transparent url(/assets/images/hero1.jpg) 0 0 no-repeat;
+}
+.col2 {
+  column-count: 2;
+  column-gap: 5%;
+  margin: 50px 0;
+  background-color: $brandcolor1;
+}
+.col2-content {
+  column-span: 1;
+  column-width: 50%;
 }
