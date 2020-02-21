@@ -83,6 +83,11 @@ h1, h2, h3, h4, h5, h6, strong, b {
   border-radius: 5px;
   font-weight: 700;
   width: 48%;
+  @include transition();
+  &:hover {
+    background-color: lighten($brandcolor2,5%);
+  }
+
   @include mq(medium) {
     font-size: .95em;
   };
@@ -105,10 +110,15 @@ h1, h2, h3, h4, h5, h6, strong, b {
     padding: 1em 0;
     display: inline-block;
     width: 100%;
+    @include transition();
   }
   a:link,a:visited {
     color: $brandcolor3;
   }
+  a:hover,a:active {
+    transform: scale(1.03);
+    }
+
 }
 .hero--sticker {
   background-color: $brandcolor5;
