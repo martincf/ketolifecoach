@@ -8,6 +8,9 @@ $backgroundColor: $brandcolor3;
 $bodyColor: #222;
 $bodyFont: campaign, "Helvetica Neue", sans-serif;
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: $backgroundColor;
   color: $bodyColor;
@@ -149,14 +152,10 @@ h1, h2, h3, h4, h5, h6, strong, b {
 
 .splash {
   padding: 800px 9% 50px 9%;
-  background: $brandcolor1 url(/assets/images/hero1.jpg) 0 -350px no-repeat;
-}
-.col-content--wrap {
-  background-color: $brandcolor1;
-  height: 100%;
+  background: transparent url(/assets/images/hero1.jpg) 0 -350px no-repeat;
 }
 .col {
-  margin: 50px 0;
+  margin: 50px 0 0;
   background-color: $brandcolor1;
 }
 .col3 {
@@ -180,6 +179,9 @@ h1, h2, h3, h4, h5, h6, strong, b {
   }
   p {
     margin: 0 0 .5em;
+    &:first-of-type:first-line {
+      font-weight: 700;
+    }
   }
 
 ul {
@@ -217,4 +219,27 @@ ul {
     }
   }
 }
+}
+.events {
+  text-align: center;
+}
+.events--header {
+  font-size: 1.5em;
+  color: $brandcolor5;
+  margin: 75px 0 25px;
+}
+.event--title {
+  font-size: 3.25em;
+  color: $brandcolor2;
+}
+.event--date {
+  font-weight: 700;
+  color: $brandcolor2;
+}
+.event--place {
+  font-weight: 700;
+  color: $brandcolor2;
+}
+.site-footer {
+  min-height: 150px;
 }
