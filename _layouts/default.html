@@ -36,14 +36,14 @@
     </div>
 
 
-    <section class="col col3 splash">
-        <div class="col3--col col-content">
+    <section class="cols col3 splash">
+        <div class="col col-content">
           <h2>What is keto?</h2>
           <p>Keto is a diet that works for everybody, following a very simple protocol. A ketogenic diet is not new, it is not a fad diet,  and it is not expensive. It is a sustainable,  and delightful way of eating that your body will love.</p>
           <p>The diet works by forcing your body to use  fat instead of ingested carbohydrates for fuel. In a nutshell, you will be loosing weight rapidly, with no hunger and you will feel great long-term benefits in a sustainable way.</p>
           <p>On top, the byproduct of burning fats are ketones, which are a great source of energy for your brain.</p>
         </div>
-        <div class="col3--col col-content">
+        <div class="col col-content">
           <h2>It's for those who...</h2>
           <ul>
             <li>want to loose weight quickly;</li>
@@ -53,7 +53,7 @@
             <li>want optimum health & well-being at any stage of their lives.</li>
           </ul>
         </div>
-        <div class="col3--col col-content">
+        <div class="col col-content">
           <h2>Who's the coach?</h2>
           <p>My name is Ana. I graduated from the University of Liverpool with a BSc in Psychology in 2016. After three years of subsequent research and self-experimentation I have learnt about the challenges of reaching optimum health.</p>
           <p>I have done all the hard investigation and research so you don't have to  (if you don't want to!) I will give you the practical advice you need from the vast amount of research behind the ketogenic diet. I will guide you through the process, in a way you feel most comfortable with.</p>
@@ -62,15 +62,40 @@
     <section class="intersection">
       <img src="{{ p.url | prepend: site.baseurl }}/assets/images/coach.jpg" alt="Ana" class="intersection--hero" />
     </section>
-    <section class="events" id="events">
-      <h2 class="events--header">Upcoming workshops</h2>
+    <section class="section" id="events">
+      <h2 class="section--header">Upcoming workshops</h2>
       <div class="event">
         <h3 class="event--title">Introduction to keto </h3>
         <p class="event--date">2.30pm–4pm, 29 March 2020</p>
         <p class="event--place"> West Kirby Arts Centre CH48 4EH</p>
+        <p class="event-book"><button class="event-book--action"><a href="">Book a place – £10</a></button></p>
       </div>
     </section>
+    <section class="section consultation" id="consultation">
+      <h2 class="section--header">Consultations</h2>
+
+    </section>
+    <section class="section research">
+      <h2 class="section--header">Research</h2>
+      <p>Some interesting articles and research so you can start your own journey and make an informed decision about taking control of your bio-markers.</p>
+      <div class="research-list">
+        {% for item in site.data.research %} <!-- Get everything in the books file -->
+        <aside class="research-list-item">
+          <h3 class="research-list-item--title">{{ item.title }}</h3>
+          <p class="research-list-item--attr">{{ item.attribution }}</p>
+          <p class="research-list-item--source">{{ item.source }}</p>
+          <p class="research-list-item--link"><a href="{{ item.link }}">View research</a></p>
+          <p class="research-list-item--desc">{{ item.desc }}</p>
+        </aside>
+        {% endfor %}
+
+
+      </div>
+    </section>
+
+
     <footer class="site-footer">
+
 
     </footer>
   </body>
