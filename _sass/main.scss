@@ -136,8 +136,9 @@ button {
   display: block;
   position: absolute;
   right: 10%;
-  top: -25px;
+  top: -30px;
   line-height: 1.1;
+  z-index: -1;
   em {
     position: relative;
     display: block;
@@ -161,7 +162,7 @@ button {
 }
 .cols {
   margin: 50px 0 0;
-  background-color: $brandcolor1;
+  background-color: $brandcolor3;
 }
 .col2 {
   column-count: 2;
@@ -221,7 +222,7 @@ ul {
       text-align: right;
       margin: 0 0 0 -2.5em;
       width: 2em;
-      color: $brandcolor3;
+      color: $brandcolor1;
       font-weight: 700;
       font-size: 1em;
       // line-height: 1;
@@ -271,24 +272,43 @@ ul {
 
 // Research
 .research {
-  background-color: $brandcolor1;
+  // background-color: $brandcolor1;
 }
 .research-list {
   text-align: left;
   max-width: 90%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
   @include cf();
 }
 .research-list-item {
   background-color: $brandcolor4;
   width: 48%;
-  float: left;
-  height: 575px;
-  padding: 1em;
-  margin-bottom: 50px;
+  // float: left;
+  // height: 575px;
+  padding: 1.5em;
+  margin-bottom: 25px;
+  font-size: .9em;
   &:nth-of-type(odd) {
-    margin-right: 4%;
+    margin-right: 3.75%;
   }
+  p {
+    margin-bottom: .5em;
+  }
+}
+.research-list-item--title {
+  margin: 0 0 .5em;
+  color: $brandcolor2;
+  font-size: 1.2rem;
+}
+.research-list-item--attr {
+  font-size: .7em;
+}
+.research-list-item--source {
+  font-size: .7em;
 }
 // Footer
 .site-footer {

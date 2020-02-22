@@ -73,7 +73,7 @@ button a:hover, button a:active { transform: scale(1.03); }
 
 @media (max-width: 800px) { .hero-ctas--cta:first-of-type { margin-right: 0; margin-bottom: 25px; } }
 
-.hero--sticker { background-color: #C03433; color: #fff; width: 100px; height: 100px; border-radius: 50%; font-size: .7em; display: block; position: absolute; right: 10%; top: -25px; line-height: 1.1; }
+.hero--sticker { background-color: #C03433; color: #fff; width: 100px; height: 100px; border-radius: 50%; font-size: .7em; display: block; position: absolute; right: 10%; top: -30px; line-height: 1.1; z-index: -1; }
 
 .hero--sticker em { position: relative; display: block; top: 50%; transform: translateY(-50%); font-style: normal; }
 
@@ -81,7 +81,7 @@ button a:hover, button a:active { transform: scale(1.03); }
 
 .splash { padding: 800px 9% 50px 9%; background: transparent url(/assets/images/hero1.jpg) 0 -350px no-repeat; }
 
-.cols { margin: 50px 0 0; background-color: #00D499; }
+.cols { margin: 50px 0 0; background-color: #FFF58A; }
 
 .col2 { column-count: 2; column-gap: 5%; }
 
@@ -105,7 +105,7 @@ button a:hover, button a:active { transform: scale(1.03); }
 
 .col-content ul li { margin-left: 1em; margin-bottom: .25em; text-align: left; display: inline-block; }
 
-.col-content ul li:before { content: "\2022"; float: left; text-align: right; margin: 0 0 0 -2.5em; width: 2em; color: #FFF58A; font-weight: 700; font-size: 1em; }
+.col-content ul li:before { content: "\2022"; float: left; text-align: right; margin: 0 0 0 -2.5em; width: 2em; color: #00D499; font-weight: 700; font-size: 1em; }
 
 .section { text-align: center; margin: 0 0 75px; padding: 75px 0 50px; }
 
@@ -127,17 +127,23 @@ button a:hover, button a:active { transform: scale(1.03); }
 
 .consultation { background-color: #fff; }
 
-.research { background-color: #00D499; }
-
-.research-list { text-align: left; max-width: 90%; margin: 0 auto; }
+.research-list { text-align: left; max-width: 90%; margin: 0 auto; display: flex; flex-direction: row; flex-wrap: wrap; align-items: stretch; }
 
 .research-list:before, .research-list:after { content: " "; display: table; }
 
 .research-list:after { clear: both; }
 
-.research-list-item { background-color: #fff; width: 48%; float: left; height: 575px; padding: 1em; margin-bottom: 50px; }
+.research-list-item { background-color: #fff; width: 48%; padding: 1.5em; margin-bottom: 25px; font-size: .9em; }
 
-.research-list-item:nth-of-type(odd) { margin-right: 4%; }
+.research-list-item:nth-of-type(odd) { margin-right: 3.75%; }
+
+.research-list-item p { margin-bottom: .5em; }
+
+.research-list-item--title { margin: 0 0 .5em; color: #002354; font-size: 1.2rem; }
+
+.research-list-item--attr { font-size: .7em; }
+
+.research-list-item--source { font-size: .7em; }
 
 .site-footer { min-height: 150px; }
 

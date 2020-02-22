@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158912313-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-158912313-1');
+    </script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>{{ page.title }} - {{ site.title }}</title>
@@ -82,10 +91,10 @@
         {% for item in site.data.research %} <!-- Get everything in the books file -->
         <aside class="research-list-item">
           <h3 class="research-list-item--title">{{ item.title }}</h3>
+          <p class="research-list-item--desc">{{ item.desc }}</p>
           <p class="research-list-item--attr">{{ item.attribution }}</p>
           <p class="research-list-item--source">{{ item.source }}</p>
           <p class="research-list-item--link"><a href="{{ item.link }}">View research</a></p>
-          <p class="research-list-item--desc">{{ item.desc }}</p>
         </aside>
         {% endfor %}
 
