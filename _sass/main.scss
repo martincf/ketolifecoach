@@ -48,6 +48,8 @@ h1, h2, h3, h4, h5, h6, strong, b {
 .hero {
   position: relative;
   text-align: center;
+  overflow: visible;
+
 }
 .hero--title {
   font-size: 3.25em;
@@ -72,11 +74,7 @@ h1, h2, h3, h4, h5, h6, strong, b {
   max-width: 65%;
   margin: 25px auto;
   background-color: $brandcolor3;
-}
-.sticky {
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
+  min-height: 100px;
 }
 .hero-ctas--cta {
   background-color: $brandcolor2;
@@ -140,17 +138,83 @@ h1, h2, h3, h4, h5, h6, strong, b {
     font-style: normal;
   }
 }
-.splash {
-  padding: 500px 9% 50px 9%;
-  background: transparent url(/assets/images/hero1.jpg) 0 0 no-repeat;
+.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  max-width: 100%;
+  padding: 25px 24% 25px;
+
 }
-.col2 {
-  column-count: 2;
-  column-gap: 5%;
+
+.splash {
+  padding: 800px 9% 50px 9%;
+  background: $brandcolor1 url(/assets/images/hero1.jpg) 0 -350px no-repeat;
+}
+.col-content--wrap {
+  background-color: $brandcolor1;
+  height: 100%;
+}
+.col {
   margin: 50px 0;
   background-color: $brandcolor1;
 }
-.col2-content {
+.col3 {
+  column-count: 3;
+  column-gap: 5%;
+}
+.col3--col {
   column-span: 1;
-  column-width: 50%;
+  column-width: 33%;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+  break-after: column;
+}
+.col-content {
+  font-size: .85em;
+  h2 {
+    font-size: 1.25rem;
+    color: $brandcolor2;
+    margin: 0 0 .5em;
+  }
+  p {
+    margin: 0 0 .5em;
+  }
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  @include mq(medium) {
+    // font-size: 1.5rem;
+
+  }
+  @include mq(small) {
+    font-size: 1.2rem;
+
+  }
+  @include mq(narrow) {
+    font-size: 1rem;
+  }
+
+  li {
+    margin-left: 1em;
+    margin-bottom: .25em;
+    text-align: left;
+    display: inline-block;
+
+    &:before {
+      content: "\2022";
+      float: left;
+      text-align: right;
+      margin: 0 0 0 -2.5em;
+      width: 2em;
+      color: $brandcolor3;
+      font-weight: 700;
+      font-size: 1em;
+      // line-height: 1;
+    }
+  }
+}
 }

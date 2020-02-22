@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6, strong, b { font-weight: 700; }
 
 .strapline { font-weight: 500; font-size: .9em; text-transform: uppercase; text-align: center; color: #002354; margin: 25px auto 0; max-width: 30%; min-width: 300px; }
 
-.hero { position: relative; text-align: center; }
+.hero { position: relative; text-align: center; overflow: visible; }
 
 .hero--title { font-size: 3.25em; max-width: 82%; min-width: 600px; margin: 0 auto 0; line-height: 1.1; padding: .25em .5em; color: #002354; }
 
@@ -45,9 +45,7 @@ h1, h2, h3, h4, h5, h6, strong, b { font-weight: 700; }
 
 .hero--text p { margin: 0 0 1em; }
 
-.hero-ctas { max-width: 65%; margin: 25px auto; background-color: #FFF58A; }
-
-.sticky { position: -webkit-sticky; /* Safari */ position: sticky; top: 0; }
+.hero-ctas { max-width: 65%; margin: 25px auto; background-color: #FFF58A; min-height: 100px; }
 
 .hero-ctas--cta { background-color: #002354; border-radius: 5px; font-weight: 700; width: 48%; transition: all .2s ease-in-out; }
 
@@ -73,10 +71,32 @@ h1, h2, h3, h4, h5, h6, strong, b { font-weight: 700; }
 
 .hero--sticker em { position: relative; display: block; top: 50%; transform: translateY(-50%); font-style: normal; }
 
-.splash { padding: 500px 9% 50px 9%; background: transparent url(/assets/images/hero1.jpg) 0 0 no-repeat; }
+.sticky { position: -webkit-sticky; /* Safari */ position: sticky; top: 0; max-width: 100%; padding: 25px 24% 25px; }
 
-.col2 { column-count: 2; column-gap: 5%; margin: 50px 0; background-color: #00D499; }
+.splash { padding: 800px 9% 50px 9%; background: #00D499 url(/assets/images/hero1.jpg) 0 -350px no-repeat; }
 
-.col2-content { column-span: 1; column-width: 50%; }
+.col-content--wrap { background-color: #00D499; height: 100%; }
+
+.col { margin: 50px 0; background-color: #00D499; }
+
+.col3 { column-count: 3; column-gap: 5%; }
+
+.col3--col { column-span: 1; column-width: 33%; -webkit-column-break-inside: avoid; page-break-inside: avoid; break-inside: avoid; break-after: column; }
+
+.col-content { font-size: .85em; }
+
+.col-content h2 { font-size: 1.25rem; color: #002354; margin: 0 0 .5em; }
+
+.col-content p { margin: 0 0 .5em; }
+
+.col-content ul { padding: 0; margin: 0; list-style-type: none; }
+
+@media (max-width: 800px) { .col-content ul { font-size: 1.2rem; } }
+
+@media (max-width: 480px) { .col-content ul { font-size: 1rem; } }
+
+.col-content ul li { margin-left: 1em; margin-bottom: .25em; text-align: left; display: inline-block; }
+
+.col-content ul li:before { content: "\2022"; float: left; text-align: right; margin: 0 0 0 -2.5em; width: 2em; color: #FFF58A; font-weight: 700; font-size: 1em; }
 
 /*# sourceMappingURL=main.css.map */
