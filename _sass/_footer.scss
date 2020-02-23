@@ -3,7 +3,23 @@
   min-height: 150px;
   padding: 50px 0;
   text-align: center;
-  background-color: darken($brandcolor3, 15%);
+  background-color: rgb(236,209,115);
+  a {
+    color: $brandcolor5;
+  }
+  .backtotop {
+    display: inline-block;
+    margin: 0 0 0 1em;
+    border: 1px solid transparentize($brandcolor5, 0.75);
+    border-radius: 3px;
+    padding: .2em .5em;
+    font-size: .75em;
+    font-style: normal;
+    text-transform: uppercase;
+    a:hover {
+      color: darken($brandcolor5,20%);
+    }
+  }
 }
 .site-footer--logo {
   max-width: 80px;

@@ -151,7 +151,13 @@ img { max-width: 100%; height: auto; border: 0; }
 
 .moreinfo-list-item--source { font-size: .7em; }
 
-.site-footer { min-height: 150px; padding: 50px 0; text-align: center; background-color: #ffee3e; }
+.site-footer { min-height: 150px; padding: 50px 0; text-align: center; background-color: #ecd173; }
+
+.site-footer a { color: #C03433; }
+
+.site-footer .backtotop { display: inline-block; margin: 0 0 0 1em; border: 1px solid rgba(192, 52, 51, 0.25); border-radius: 3px; padding: .2em .5em; font-size: .75em; font-style: normal; text-transform: uppercase; }
+
+.site-footer .backtotop a:hover { color: #6f1e1e; }
 
 .site-footer--logo { max-width: 80px; vertical-align: middle; display: inline-block; margin: 0 .5em 0 0; }
 
