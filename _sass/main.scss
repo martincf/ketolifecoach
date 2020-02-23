@@ -19,8 +19,23 @@ body {
   font-style: normal;
   font-size: 1.2em;
   line-height: 1.5;
+
+  @include mq(medium) {
+    border: 5px solid blue;
+  }
+  @include mq(small) {
+    border: 5px solid green;
+  }
+
 }
-h1, h2, h3, h4, h5, h6, strong, b {
+h1, h2, h3, h4, h5, h6 {
+  word-spacing: -.075em;
+  font-weight: 700;
+}
+p {
+  word-spacing: -.075em;
+}
+strong, b {
   font-weight: 700;
 }
 button {
@@ -83,6 +98,11 @@ button {
   line-height: 1.1;
   padding: .25em .5em;
   color: $brandcolor2;
+  @include mq(small) {
+    min-width: inherit;
+    font-size: 2.25em;
+  }
+
 }
 .hero--text {
   border-top: 12px solid $brandcolor2;
@@ -99,6 +119,15 @@ button {
   margin: 25px auto;
   background-color: $brandcolor3;
   min-height: 100px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  max-width: 100%;
+  padding: 1em 10% 0;
+
+  @include mq(small) {
+    min-height: 100px;
+  }
 }
 .hero-ctas--cta {
   background-color: $brandcolor2;
@@ -111,9 +140,9 @@ button {
     font-size: .95em;
   };
   @include mq(small) {
-    font-size: .8em;
+    font-size: .7em;
   };
-  @include mq(small) {
+  @include mq(narrow) {
     font-size: 1em;
     width: 100%;
 
@@ -121,9 +150,14 @@ button {
   &:first-of-type {
     margin-right: 2%;
     @include mq(small) {
-      margin-right: 0;
-      margin-bottom: 25px;
+      margin-right: 2%;
+      margin-bottom: 1em;
     };
+    @include mq(narrow) {
+      margin-right: 0;
+      margin-bottom: 1em;
+    };
+
   }
 }
 .hero--sticker {
@@ -147,15 +181,6 @@ button {
     font-style: normal;
   }
 }
-.sticky {
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
-  max-width: 100%;
-  padding: 25px 24% 25px;
-
-}
-
 .splash {
   padding: 800px 9% 50px 9%;
   background: transparent url(/assets/images/hero1.jpg) 0 -350px no-repeat;
@@ -171,6 +196,11 @@ button {
 .col3 {
   column-count: 3;
   column-gap: 5%;
+  @include mq(small) {
+    column-count: 1;
+    column-gap: 0;
+  }
+
 }
 .col {
   column-span: 1;
@@ -179,6 +209,12 @@ button {
   page-break-inside: avoid;
   break-inside: avoid;
   break-after: column;
+  @include mq(small) {
+    column-span: all;
+    column-width: 100%;
+    margin-bottom: 50px;
+  }
+
 }
 .col-content {
   font-size: .85em;
@@ -203,7 +239,7 @@ ul {
 
   }
   @include mq(small) {
-    font-size: 1.2rem;
+    // font-size: 1.2rem;
 
   }
   @include mq(narrow) {
@@ -234,7 +270,10 @@ ul {
   text-align: center;
   margin: 0 0 75px;
   padding: 75px 0 50px;
-
+  @include mq(small) {
+    padding: 25px 0;
+    margin-bottom: 25px;
+  }
 }
 .section--header {
   font-size: 1.5em;
@@ -245,15 +284,23 @@ ul {
   font-size: 3.25em;
   color: $brandcolor2;
   line-height: 1;
+  @include mq(small) {
+    min-width: inherit;
+    font-size: 2em;
+  }
 }
 .section--intro {
   width: 72%;
   margin: 1em auto;
+  @include mq(small) {
+    width: 90%;
+  }
 }
 // Events
 .event--date {
   font-weight: 700;
   color: $brandcolor2;
+  margin-top: 25px;
 }
 .event--place {
   font-weight: 700;
@@ -311,6 +358,9 @@ ul {
   flex-wrap: wrap;
   align-items: stretch;
   @include cf();
+  @include mq(small) {
+    display: block;
+  }
 }
 .moreinfo-list-item {
   background-color: transparentize($brandcolor4,0.2);
@@ -320,6 +370,10 @@ ul {
   padding: 1.5em;
   margin-bottom: 25px;
   font-size: .85em;
+  @include mq(small) {
+    width: 100%;
+  }
+
   &:nth-of-type(odd) {
     margin-right: 3.75%;
   }
