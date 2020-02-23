@@ -1,0 +1,26 @@
+// Header
+.header {
+  margin: 0 0 50px;
+}
+.brand {
+  text-align: center;
+  max-width: 21%;
+  min-width: 250px;
+  margin: 0 auto;
+  padding: 25px 0;
+  // background-color: $brandcolor1;
+}
+.brand--logo {
+  max-width: 20%;
+  min-width: 200px;
+}
+.strapline {
+  font-weight: 500;
+  font-size: .9em;
+  text-transform: uppercase;
+  text-align: center;
+  color: $brandcolor2;
+  margin: 0 auto 0;
+  max-width: 30%;
+  min-width: 300px;
+}

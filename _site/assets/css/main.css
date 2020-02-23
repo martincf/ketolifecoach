@@ -25,35 +25,13 @@ button { overflow: visible; font: inherit; cursor: pointer; letter-spacing: inhe
 
 img { max-width: 100%; height: auto; border: 0; }
 
-html { scroll-behavior: smooth; }
-
-body { background: #FFF58A; color: #222; font-family: campaign, "Helvetica Neue", sans-serif; font-weight: 500; font-style: normal; font-size: 1.2em; line-height: 1.5; }
-
-h1, h2, h3, h4, h5, h6 { word-spacing: -.075em; font-weight: 700; }
-
-p { word-spacing: -.075em; }
-
-strong, b { font-weight: 700; }
-
-table { word-spacing: -.075em; }
-
-button { border-radius: 5px; font-weight: 700; transition: all .2s ease-in-out; }
-
-button:hover { transform: scale(1.05); }
-
-button a { padding: 1em 0; display: inline-block; width: 100%; transition: all .2s ease-in-out; }
-
-button a:link, button a:visited { color: #FFF58A; }
-
-button a:hover, button a:active { transform: scale(1.03); }
-
 .header { margin: 0 0 50px; }
 
-.brand { text-align: center; max-width: 21%; min-width: 250px; margin: 0 auto; padding: 25px 0; background-color: #00D499; }
+.brand { text-align: center; max-width: 21%; min-width: 250px; margin: 0 auto; padding: 25px 0; }
 
 .brand--logo { max-width: 20%; min-width: 200px; }
 
-.strapline { font-weight: 500; font-size: .9em; text-transform: uppercase; text-align: center; color: #002354; margin: 25px auto 0; max-width: 30%; min-width: 300px; }
+.strapline { font-weight: 500; font-size: .9em; text-transform: uppercase; text-align: center; color: #002354; margin: 0 auto 0; max-width: 30%; min-width: 300px; }
 
 .hero { position: relative; text-align: center; overflow: visible; }
 
@@ -103,7 +81,95 @@ button a:hover, button a:active { transform: scale(1.03); }
 
 @media (max-width: 800px) { .splash { background-size: contain; background-position: 0 -100px; } }
 
-@media (max-width: 480px) { .splash { background-position: 0 -50px; } }
+@media (max-width: 480px) { .splash { background-position: 0 -50px; padding-bottom: 0; } }
+
+.event--date { font-weight: 700; color: #002354; margin-top: 25px; }
+
+@media (max-width: 480px) { .event--date { font-size: .85em; } }
+
+.event--place { font-weight: 700; color: #002354; }
+
+@media (max-width: 480px) { .event--place { font-size: .85em; } }
+
+.event-book { margin: 25px 0; }
+
+.event-book--action { background-color: #C03433; min-width: 25%; }
+
+@media (max-width: 480px) { .event-book--action { font-size: .85em; } }
+
+.event-book--action a { padding: 1em; }
+
+.event-book--action:hover { background-color: #cc4140; }
+
+.event-book--action:hover a { color: #fff; }
+
+.consultation { background-color: rgba(255, 255, 255, 0.25); }
+
+.consultation-prices { width: 72%; margin: 50px auto; text-align: left; padding: 0; font-size: 1.25em; border-top: 1px solid #d7c400; }
+
+@media (max-width: 480px) { .consultation-prices { font-size: .85em; width: 90%; } }
+
+.consultation-prices th, .consultation-prices td { margin: 0; padding: .5em; border-bottom: 1px solid #d7c400; vertical-align: top; }
+
+.consultation-prices th { color: #002354; }
+
+.consultation-prices td { text-align: right; }
+
+.moreinfo { margin: 0 auto; }
+
+.moreinfo-list { text-align: left; max-width: 92%; margin: 50px auto; display: flex; flex-direction: row; flex-wrap: wrap; align-items: stretch; }
+
+.moreinfo-list:before, .moreinfo-list:after { content: " "; display: table; }
+
+.moreinfo-list:after { clear: both; }
+
+@media (max-width: 800px) { .moreinfo-list { display: block; } }
+
+.moreinfo-list-item { background-color: rgba(255, 255, 255, 0.8); width: 48%; padding: 1.5em; margin-bottom: 25px; font-size: .85em; }
+
+@media (max-width: 800px) { .moreinfo-list-item { width: 100%; } }
+
+.moreinfo-list-item .moreinfo-list-item--title { line-height: 1.1; }
+
+.moreinfo-list-item:nth-of-type(odd) { margin-right: 3.75%; }
+
+.moreinfo-list-item p { margin-bottom: .5em; }
+
+.moreinfo-list-item--title { margin: 0 0 .5em; color: #002354; font-size: 1.2rem; }
+
+.link--research { color: #C03433; text-decoration: underline; transition: all .2s ease-in-out; }
+
+@media (max-width: 480px) { .link--research { font-size: .85em; } }
+
+.link--research:hover { color: #d76968; }
+
+.moreinfo-list-item--attr { font-size: .7em; }
+
+.moreinfo-list-item--source { font-size: .7em; }
+
+.site-footer { min-height: 150px; padding: 50px 0; text-align: center; background-color: #ffee3e; }
+
+html { scroll-behavior: smooth; }
+
+body { background: #FFF58A; color: #222; font-family: campaign, "Helvetica Neue", sans-serif; font-weight: 500; font-style: normal; font-size: 1.2em; line-height: 1.5; }
+
+h1, h2, h3, h4, h5, h6 { word-spacing: -.075em; font-weight: 700; }
+
+p { word-spacing: -.075em; }
+
+strong, b { font-weight: 700; }
+
+table { word-spacing: -.075em; }
+
+button { border-radius: 5px; font-weight: 700; transition: all .2s ease-in-out; }
+
+button:hover { transform: scale(1.05); }
+
+button a { padding: 1em 0; display: inline-block; width: 100%; transition: all .2s ease-in-out; }
+
+button a:link, button a:visited { color: #FFF58A; }
+
+button a:hover, button a:active { transform: scale(1.03); }
 
 .cols { margin: 50px 0 0; background-color: #FFF58A; }
 
@@ -153,70 +219,6 @@ button a:hover, button a:active { transform: scale(1.03); }
 
 @media (max-width: 480px) { .section--intro { font-size: .85em; } }
 
-.event--date { font-weight: 700; color: #002354; margin-top: 25px; }
-
-@media (max-width: 480px) { .event--date { font-size: .85em; } }
-
-.event--place { font-weight: 700; color: #002354; }
-
-@media (max-width: 480px) { .event--place { font-size: .85em; } }
-
-.event-book { margin: 25px 0; }
-
-.event-book--action { background-color: #C03433; min-width: 25%; }
-
-@media (max-width: 480px) { .event-book--action { font-size: .85em; } }
-
-.event-book--action a { padding: 1em; }
-
-.event-book--action:hover { background-color: #cc4140; }
-
-.event-book--action:hover a { color: #fff; }
-
-.consultation { background-color: rgba(255, 255, 255, 0.25); }
-
-.consultation-prices { width: 72%; margin: 50px auto; text-align: left; padding: 0; font-size: 1.25em; border-top: 1px solid #d7c400; }
-
-@media (max-width: 480px) { .consultation-prices { font-size: .85em; width: 90%; } }
-
-.consultation-prices th, .consultation-prices td { margin: 0; padding: .5em; border-bottom: 1px solid #d7c400; vertical-align: top; }
-
-.consultation-prices th { color: #002354; }
-
-.consultation-prices td { text-align: right; }
-
-.moreinfo { max-width: 82%; margin: 0 auto; }
-
-.moreinfo-list { text-align: left; max-width: 100%; margin: 50px auto; display: flex; flex-direction: row; flex-wrap: wrap; align-items: stretch; }
-
-.moreinfo-list:before, .moreinfo-list:after { content: " "; display: table; }
-
-.moreinfo-list:after { clear: both; }
-
-@media (max-width: 800px) { .moreinfo-list { display: block; } }
-
-.moreinfo-list-item { background-color: rgba(255, 255, 255, 0.8); width: 48%; padding: 1.5em; margin-bottom: 25px; font-size: .85em; }
-
-@media (max-width: 800px) { .moreinfo-list-item { width: 100%; } }
-
-.moreinfo-list-item .moreinfo-list-item--title { line-height: 1.1; }
-
-.moreinfo-list-item:nth-of-type(odd) { margin-right: 3.75%; }
-
-.moreinfo-list-item p { margin-bottom: .5em; }
-
-.moreinfo-list-item--title { margin: 0 0 .5em; color: #002354; font-size: 1.2rem; }
-
-.link--research { color: #C03433; text-decoration: underline; transition: all .2s ease-in-out; }
-
-@media (max-width: 480px) { .link--research { font-size: .85em; } }
-
-.link--research:hover { color: #d76968; }
-
-.moreinfo-list-item--attr { font-size: .7em; }
-
-.moreinfo-list-item--source { font-size: .7em; }
-
-.site-footer { min-height: 150px; padding: 50px 0; text-align: center; background-color: #ffee3e; }
+.intersection--hero { width: 100%; }
 
 /*# sourceMappingURL=main.css.map */

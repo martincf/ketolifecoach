@@ -1,0 +1,35 @@
+// Events
+.event--date {
+  font-weight: 700;
+  color: $brandcolor2;
+  margin-top: 25px;
+  @include mq(narrow) {
+    font-size: .85em;
+  }
+}
+.event--place {
+  font-weight: 700;
+  color: $brandcolor2;
+  @include mq(narrow) {
+    font-size: .85em;
+  }
+}
+.event-book {
+  margin: 25px 0;
+}
+.event-book--action {
+  background-color: $brandcolor5;
+  min-width: 25%;
+  @include mq(narrow) {
+    font-size: .85em;
+  }
+  a {
+    padding: 1em;
+  }
+  &:hover {
+    background-color: lighten($brandcolor5, 5%);
+    a {
+      color: $brandcolor4;
+    }
+  }
+}

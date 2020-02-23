@@ -1,0 +1,28 @@
+// consultation
+.consultation {
+  background-color: transparentize($brandcolor4, 0.75);
+}
+.consultation-prices {
+  width: 72%;
+  margin: 50px auto;
+  text-align: left;
+  padding: 0;
+  font-size: 1.25em;
+  border-top: 1px solid darken($brandcolor3,35%);
+  @include mq(narrow) {
+    font-size: .85em;
+    width: 90%;
+  }
+  th, td {
+    margin: 0;
+    padding: .5em;
+    border-bottom: 1px solid darken($brandcolor3,35%);
+    vertical-align: top;
+  }
+  th {
+    color: $brandcolor2;
+  }
+  td {
+    text-align: right;
+  }
+}
