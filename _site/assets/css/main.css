@@ -111,7 +111,7 @@ button a:hover, button a:active { transform: scale(1.03); }
 
 .section--header { font-size: 1.5em; color: #C03433; margin: 75px 0 25px; }
 
-.event--title { font-size: 3.25em; color: #002354; }
+.event--title { font-size: 3.25em; color: #002354; line-height: 1; }
 
 .event--date { font-weight: 700; color: #002354; }
 
@@ -125,26 +125,38 @@ button a:hover, button a:active { transform: scale(1.03); }
 
 .event-book--action:hover a { color: #fff; }
 
-.consultation { background-color: #fff; }
+.consultation { background-color: rgba(255, 255, 255, 0.25); }
 
-.research-list { text-align: left; max-width: 90%; margin: 0 auto; display: flex; flex-direction: row; flex-wrap: wrap; align-items: stretch; }
+.consultation--intro { width: 72%; margin: 1em auto; }
 
-.research-list:before, .research-list:after { content: " "; display: table; }
+.consultation-prices { width: 72%; margin: 50px auto; text-align: left; padding: 0; font-size: 1.25em; border-top: 1px solid #d7c400; }
 
-.research-list:after { clear: both; }
+.consultation-prices th, .consultation-prices td { margin: 0; padding: .5em; border-bottom: 1px solid #d7c400; vertical-align: top; }
 
-.research-list-item { background-color: #fff; width: 48%; padding: 1.5em; margin-bottom: 25px; font-size: .9em; }
+.consultation-prices th { color: #002354; }
 
-.research-list-item:nth-of-type(odd) { margin-right: 3.75%; }
+.consultation-prices td { text-align: right; }
 
-.research-list-item p { margin-bottom: .5em; }
+.moreinfo { max-width: 82%; margin: 0 auto; }
 
-.research-list-item--title { margin: 0 0 .5em; color: #002354; font-size: 1.2rem; }
+.moreinfo-list { text-align: left; max-width: 100%; margin: 50px auto; display: flex; flex-direction: row; flex-wrap: wrap; align-items: stretch; }
 
-.research-list-item--attr { font-size: .7em; }
+.moreinfo-list:before, .moreinfo-list:after { content: " "; display: table; }
 
-.research-list-item--source { font-size: .7em; }
+.moreinfo-list:after { clear: both; }
 
-.site-footer { min-height: 150px; }
+.moreinfo-list-item { background-color: rgba(255, 255, 255, 0.8); width: 48%; padding: 1.5em; margin-bottom: 25px; font-size: .85em; }
+
+.moreinfo-list-item:nth-of-type(odd) { margin-right: 3.75%; }
+
+.moreinfo-list-item p { margin-bottom: .5em; }
+
+.moreinfo-list-item--title { margin: 0 0 .5em; color: #002354; font-size: 1.2rem; }
+
+.moreinfo-list-item--attr { font-size: .7em; }
+
+.moreinfo-list-item--source { font-size: .7em; }
+
+.site-footer { min-height: 150px; padding: 50px 0; text-align: center; background-color: #ffee3e; }
 
 /*# sourceMappingURL=main.css.map */

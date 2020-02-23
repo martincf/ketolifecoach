@@ -77,35 +77,45 @@
         <h3 class="event--title">Introduction to keto </h3>
         <p class="event--date">2.30pm–4pm, 29 March 2020</p>
         <p class="event--place"> West Kirby Arts Centre CH48 4EH</p>
-        <p class="event-book"><button class="event-book--action"><a href="">Book a place – £10</a></button></p>
+        <p class="event-book"><button class="event-book--action"><a href="">Book a place – £15</a></button></p>
+        <p><small>Maximum 20 spaces, book soon.</small></p>
       </div>
     </section>
     <section class="section consultation" id="consultation">
-      <h2 class="section--header">Consultations</h2>
-
+      <h2 class="section--header">Consultation</h2>
+      <p class="consultation--intro">Enlist me to help you turn your health around. A consultation will be a one-to-one chat covering your current routine and discussing where positive action can be made. A plan will be shared based on our conversation with the chance for weekly catchups on progress over 4 weeks.</p>
+      <table border="0" class="consultation-prices" cellspacing="0" cellpadding="0">
+        <tr>
+          <th>First 45 min consultation inc. 4-week plan</th>
+          <td>£75</td>
+        </tr>
+        <tr>
+          <th>Subsequent 30 min weekly catchup consultations</th>
+          <td>£30</td>
+        </tr>
+      </table>
+      <p class="event-book"><button class="event-book--action"><a href="">Request a consultation</a></button></p>
     </section>
-    <section class="section research">
-      <h2 class="section--header">Research</h2>
-      <p>Some interesting articles and research so you can start your own journey and make an informed decision about taking control of your bio-markers.</p>
-      <div class="research-list">
-        {% for item in site.data.research %} <!-- Get everything in the books file -->
-        <aside class="research-list-item">
-          <h3 class="research-list-item--title">{{ item.title }}</h3>
-          <p class="research-list-item--desc">{{ item.desc }}</p>
-          <p class="research-list-item--attr">{{ item.attribution }}</p>
+    <section class="section moreinfo">
+      <h2 class="section--header">Getting to know keto</h2>
+      <p>Some useful info so you can start your own journey and make an informed decision about taking control of your bio-markers.</p>
+      <div class="moreinfo-list">
+        {% for item in site.data.facts %} <!-- Get everything in the books file -->
+        <aside class="moreinfo-list-item">
+          <h3 class="moreinfo-list-item--title">{{ item.title }}</h3>
+          <p class="moreinfo-list-item--desc">{{ item.text | markdownify }}</p>
+          <!-- <p class="research-list-item--attr">{{ item.attribution }}</p>
           <p class="research-list-item--source">{{ item.source }}</p>
-          <p class="research-list-item--link"><a href="{{ item.link }}">View research</a></p>
+          <p class="research-list-item--link"><a href="{{ item.link }}">View research</a></p> -->
         </aside>
         {% endfor %}
-
-
       </div>
+      <p class="link--research"><a href="">See my list of useful research papers</a></p>
     </section>
 
 
     <footer class="site-footer">
-
-
+      <p>{{ 'now' | date: "%Y" }} &copy; Keto Life Coach. <a href="mailto:info@ketolifecoach.me">info@ketolifecoach.me</a></p>
     </footer>
   </body>
 </html>

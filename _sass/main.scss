@@ -244,6 +244,7 @@ ul {
 .event--title {
   font-size: 3.25em;
   color: $brandcolor2;
+  line-height: 1;
 }
 .event--date {
   font-weight: 700;
@@ -267,31 +268,57 @@ ul {
   }
 }
 .consultation {
-  background-color: $brandcolor4;
+  background-color: transparentize($brandcolor4, 0.75);
+}
+.consultation--intro {
+  width: 72%;
+  margin: 1em auto;
+}
+.consultation-prices {
+  width: 72%;
+  margin: 50px auto;
+  text-align: left;
+  padding: 0;
+  font-size: 1.25em;
+  border-top: 1px solid darken($brandcolor3,35%);
+  th, td {
+    margin: 0;
+    padding: .5em;
+    border-bottom: 1px solid darken($brandcolor3,35%);
+    vertical-align: top;
+  }
+  th {
+    color: $brandcolor2;
+  }
+  td {
+    text-align: right;
+  }
 }
 
 // Research
-.research {
+.moreinfo {
   // background-color: $brandcolor1;
-}
-.research-list {
-  text-align: left;
-  max-width: 90%;
+  max-width: 82%;
   margin: 0 auto;
+}
+.moreinfo-list {
+  text-align: left;
+  max-width: 100%;
+  margin: 50px auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: stretch;
   @include cf();
 }
-.research-list-item {
-  background-color: $brandcolor4;
+.moreinfo-list-item {
+  background-color: transparentize($brandcolor4,0.2);
   width: 48%;
   // float: left;
   // height: 575px;
   padding: 1.5em;
   margin-bottom: 25px;
-  font-size: .9em;
+  font-size: .85em;
   &:nth-of-type(odd) {
     margin-right: 3.75%;
   }
@@ -299,18 +326,21 @@ ul {
     margin-bottom: .5em;
   }
 }
-.research-list-item--title {
+.moreinfo-list-item--title {
   margin: 0 0 .5em;
   color: $brandcolor2;
   font-size: 1.2rem;
 }
-.research-list-item--attr {
+.moreinfo-list-item--attr {
   font-size: .7em;
 }
-.research-list-item--source {
+.moreinfo-list-item--source {
   font-size: .7em;
 }
 // Footer
 .site-footer {
   min-height: 150px;
+  padding: 50px 0;
+  text-align: center;
+  background-color: darken($brandcolor3, 15%);
 }
