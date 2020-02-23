@@ -95,7 +95,7 @@ button a:hover, button a:active { transform: scale(1.03); }
 
 @media (max-width: 800px) { .hero--sticker { top: -50px; } }
 
-@media (max-width: 480px) { .hero--sticker { right: 50%; transform: translateX(50px); } }
+@media (max-width: 480px) { .hero--sticker { right: 50%; top: -30px; transform: translateX(50px); } }
 
 .hero--sticker em { position: relative; display: block; top: 50%; transform: translateY(-50%); font-style: normal; }
 
