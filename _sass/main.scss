@@ -241,11 +241,16 @@ ul {
   color: $brandcolor5;
   margin: 75px 0 25px;
 }
-.event--title {
+.section--title {
   font-size: 3.25em;
   color: $brandcolor2;
   line-height: 1;
 }
+.section--intro {
+  width: 72%;
+  margin: 1em auto;
+}
+// Events
 .event--date {
   font-weight: 700;
   color: $brandcolor2;
@@ -269,10 +274,6 @@ ul {
 }
 .consultation {
   background-color: transparentize($brandcolor4, 0.75);
-}
-.consultation--intro {
-  width: 72%;
-  margin: 1em auto;
 }
 .consultation-prices {
   width: 72%;

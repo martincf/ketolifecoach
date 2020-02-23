@@ -111,7 +111,9 @@ button a:hover, button a:active { transform: scale(1.03); }
 
 .section--header { font-size: 1.5em; color: #C03433; margin: 75px 0 25px; }
 
-.event--title { font-size: 3.25em; color: #002354; line-height: 1; }
+.section--title { font-size: 3.25em; color: #002354; line-height: 1; }
+
+.section--intro { width: 72%; margin: 1em auto; }
 
 .event--date { font-weight: 700; color: #002354; }
 
@@ -126,8 +128,6 @@ button a:hover, button a:active { transform: scale(1.03); }
 .event-book--action:hover a { color: #fff; }
 
 .consultation { background-color: rgba(255, 255, 255, 0.25); }
-
-.consultation--intro { width: 72%; margin: 1em auto; }
 
 .consultation-prices { width: 72%; margin: 50px auto; text-align: left; padding: 0; font-size: 1.25em; border-top: 1px solid #d7c400; }
 
