@@ -1,0 +1,9 @@
+.page .section {
+  padding-top: 0;
+}
+.page {
+  padding: 0 9%;
+  .section > p {
+    margin: 25px 10% 50px;
+  }
+}

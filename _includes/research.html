@@ -1,0 +1,8 @@
+{% for item in site.data.research %} <!-- Get everything in the research file -->
+  <aside class="research-list-item">
+    <h3 class="research-list-item--title">{{ item.title }}</h3>
+    <div class="research-list-item--desc">{{ item.desc | markdownify }}</div>
+    <p class="research-list-item--source">{{ item.source }}</p>
+    <p class="research-list-item--link"><a href="{{ item.link }}">View research</a></p>
+  </aside>
+{% endfor %}

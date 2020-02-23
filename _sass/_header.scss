@@ -13,6 +13,10 @@
 .brand--logo {
   max-width: 20%;
   min-width: 200px;
+  @include transition();
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 .strapline {
   font-weight: 500;

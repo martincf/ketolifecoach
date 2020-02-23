@@ -6,12 +6,7 @@
   <h2 class="section--header">Research</h2>
   <!-- <h3 class="section--title">Deepen your keto knowledge</h3> -->
   {{ content }}
-  {% for item in site.data.research %} <!-- Get everything in the books file -->
-  <aside class="moreinfo-list-item">
-    <h3 class="moreinfo-list-item--title">{{ item.title }}</h3>
-    <p class="moreinfo-list-item--desc">{{ item.desc | markdownify }}</p>
-  </aside>
-  {% endfor %}
+{% include research.html %}
 
 </section>
 </main>

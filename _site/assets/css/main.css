@@ -29,7 +29,9 @@ img { max-width: 100%; height: auto; border: 0; }
 
 .brand { text-align: center; max-width: 21%; min-width: 250px; margin: 0 auto; padding: 25px 0; }
 
-.brand--logo { max-width: 20%; min-width: 200px; }
+.brand--logo { max-width: 20%; min-width: 200px; transition: all .2s ease-in-out; }
+
+.brand--logo:hover { transform: scale(1.05); }
 
 .strapline { font-weight: 500; font-size: .9em; text-transform: uppercase; text-align: center; color: #002354; margin: 0 auto 0; max-width: 30%; min-width: 300px; }
 
@@ -148,6 +150,24 @@ img { max-width: 100%; height: auto; border: 0; }
 .moreinfo-list-item--source { font-size: .7em; }
 
 .site-footer { min-height: 150px; padding: 50px 0; text-align: center; background-color: #ffee3e; }
+
+.page .section { padding-top: 0; }
+
+.page { padding: 0 9%; }
+
+.page .section > p { margin: 25px 10% 50px; }
+
+.research-list-item { background-color: rgba(255, 255, 255, 0.8); padding: 3em; margin: 25px auto; text-align: left; max-width: 960px; }
+
+.research-list-item--title { margin: 0 0 .5em; font-size: 1.2em; color: #002354; line-height: 1.1; }
+
+.research-list-item--desc { line-height: 1.3; }
+
+.research-list-item--source { font-size: .85em; color: #999; line-height: 1.2; margin: 1em 0 0; max-width: 75%; }
+
+.research-list-item--link { margin: 50px 0 0; }
+
+.research-list-item--link a { color: #C03433; text-decoration: underline; }
 
 html { scroll-behavior: smooth; }
 
