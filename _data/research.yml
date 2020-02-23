@@ -1,11 +1,14 @@
 - title: "Beyond weight loss: a review of the therapeutic uses of very-low-carbohydrate (ketogenic) diets"
-  attribution: "A Paoli1, A Rubini1, JS Volek2 and KA Grimaldi3"
+  question: "This is a question"
+  answer: "Here's the answer"
   source: "European Journal of Clinical Nutrition (2013) 67, 789–796"
   link: https://www.nature.com/articles/ejcn2013116.pdf
   desc: |
     Recent work over the last decade or so has provided evidence of the therapeutic potential of ketogenic diets in many pathological conditions, such as diabetes, polycystic ovary syndrome, acne, neurological diseases, cancer and the amelioration of respiratory and cardiovascular disease risk factors. The possibility that modifying food intake can be useful for reducing or eliminating pharmaceutical methods of treatment, which are often lifelong with significant side effects, calls for serious investigation
 
 - title: "The ketogenic diet: pros and cons"
+  question: "This is a question"
+  answer: "Here's the answer"
   attribution: "Blair O'Neill a,b,c, Paolo Raggi a,b,c, ∗ a Mazankowski"
   source: "Alberta Heart Institute, University of Alberta, Edmonton, AB, Canada b Department of Medicine, University of Alberta, Edmonton, AB, Canada"
   link: https://www.atherosclerosis-journal.com/article/S0021-9150(19)31589-8/pdf
@@ -13,6 +16,8 @@
     The ketogenic diet causes a rapid and sensible weight loss along with favourable biomarker changes, such as a reduction in serum hemoglobin A1c in patients with diabetes mellitus type 2. However, it also causes a substantial rise in low density lipoprotein cholesterol levels and many physicians are therefore hesitant to endorse it. In view of the popular uptake of the keto diet even among subjects not in need of weight loss, there is some preoccupation with the potential long-term consequences of a wide embrace of this diet by large segments of the population.
 
 - title: "Dietary Intervention for Overweight and Obese Adults: Comparison of LowCarbohydrate and Low-Fat Diets. A MetaAnalysis"
+  question: "This is a question"
+  answer: "Here's the answer"
   attribution: "Jonathan Sackner-Bernstein1 *, David Kanter2, Sanjay Kaul3 1"
   source: "ExVivos, LLC, Hastings-on-Hudson, NY, United States of America, 2 Georgetown University Law Center, Washington, DC"
   link: https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0139817&type=printable
@@ -20,6 +25,8 @@
     Research have suggested that low carbohydrate, high-fat diets are associated with significantly greater weight loss compared with low-fat diets in head to head randomized control trials
 
 - title: "Effect of ketogenic Mediterranean diet with phytoextracts and low carbohydrates/high-protein meals on weight, cardiovascular risk factors, body composition and diet compliance in Italian council employees."
+  question: "This is a question"
+  answer: "Here's the answer"
   attribution: "Paoli A1, Cenci L, Grimaldi KA."
   source: "Nutrition Journal 2011"
   link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3217855/pdf/1475-2891-10-112.pdf

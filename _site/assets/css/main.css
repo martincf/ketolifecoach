@@ -85,6 +85,8 @@ img { max-width: 100%; height: auto; border: 0; }
 
 @media (max-width: 480px) { .splash { background-position: 0 -50px; padding-bottom: 0; } }
 
+.event { max-width: 82%; margin: 0 auto; }
+
 .event--date { font-weight: 700; color: #002354; margin-top: 25px; }
 
 @media (max-width: 480px) { .event--date { font-size: .85em; } }
