@@ -19,16 +19,6 @@ body {
   font-style: normal;
   font-size: 1.2em;
   line-height: 1.5;
-
-  @include mq(medium) {
-    border: 5px solid blue;
-  }
-  @include mq(small) {
-    border: 5px solid green;
-  }
-  @include mq(narrow) {
-    border: 5px solid red;
-  }
 }
 h1, h2, h3, h4, h5, h6 {
   word-spacing: -.075em;
@@ -103,6 +93,7 @@ button {
   line-height: 1.1;
   padding: .25em .5em;
   color: $brandcolor2;
+  text-shadow: 0 0 40px $brandcolor3;
   @include mq(small) {
     min-width: inherit;
     font-size: 2.25em;
@@ -187,6 +178,9 @@ button {
   top: -30px;
   line-height: 1.1;
   z-index: -1;
+  @include mq(small) {
+    top: -50px;
+  }
   @include mq(narrow) {
     right: 50%;
     transform: translateX(50px);
@@ -201,8 +195,18 @@ button {
   }
 }
 .splash {
-  padding: 800px 9% 50px 9%;
-  background: transparent url(/assets/images/hero1.jpg) 0 -350px no-repeat;
+  padding: 65% 9% 50px 9%;
+  background: transparent url(/assets/images/hero1.jpg) 0 -100px no-repeat;
+  background-size: contain;
+
+  @include mq(small) {
+    background-size: contain;
+    background-position: 0 -100px;
+  }
+  @include mq(narrow) {
+    background-position: 0 -50px;
+
+  }
 }
 .cols {
   margin: 50px 0 0;
@@ -351,6 +355,9 @@ ul {
   min-width: 25%;
   @include mq(narrow) {
     font-size: .85em;
+  }
+  a {
+    padding: 1em;
   }
   &:hover {
     background-color: lighten($brandcolor5, 5%);
