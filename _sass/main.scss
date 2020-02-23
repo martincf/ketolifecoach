@@ -26,7 +26,9 @@ body {
   @include mq(small) {
     border: 5px solid green;
   }
-
+  @include mq(narrow) {
+    border: 5px solid red;
+  }
 }
 h1, h2, h3, h4, h5, h6 {
   word-spacing: -.075em;
@@ -37,6 +39,9 @@ p {
 }
 strong, b {
   font-weight: 700;
+}
+table {
+  word-spacing: -.075em;
 }
 button {
   border-radius: 5px;
@@ -102,7 +107,10 @@ button {
     min-width: inherit;
     font-size: 2.25em;
   }
-
+  @include mq(narrow) {
+    font-size: 1.5em;
+    padding-top: 100px;
+  }
 }
 .hero--text {
   border-top: 12px solid $brandcolor2;
@@ -110,6 +118,9 @@ button {
   max-width: 72%;
   padding-top: 1em;
   margin: 0 auto;
+  @include mq(narrow) {
+    font-size: .85em;
+  }
   p {
     margin: 0 0 1em;
   }
@@ -128,6 +139,9 @@ button {
   @include mq(small) {
     min-height: 100px;
   }
+  @include mq(narrow) {
+    min-height: 150px;
+  }
 }
 .hero-ctas--cta {
   background-color: $brandcolor2;
@@ -143,7 +157,7 @@ button {
     font-size: .7em;
   };
   @include mq(narrow) {
-    font-size: 1em;
+    font-size: .7em;
     width: 100%;
 
   };
@@ -173,6 +187,11 @@ button {
   top: -30px;
   line-height: 1.1;
   z-index: -1;
+  @include mq(narrow) {
+    right: 50%;
+    transform: translateX(50px);
+  }
+
   em {
     position: relative;
     display: block;
@@ -279,6 +298,11 @@ ul {
   font-size: 1.5em;
   color: $brandcolor5;
   margin: 75px 0 25px;
+  @include mq(narrow) {
+    font-size: 1.1em;
+    margin: 25px 0;
+  }
+
 }
 .section--title {
   font-size: 3.25em;
@@ -288,6 +312,10 @@ ul {
     min-width: inherit;
     font-size: 2em;
   }
+  @include mq(narrow) {
+    font-size: 1.5em;
+  }
+
 }
 .section--intro {
   width: 72%;
@@ -295,16 +323,25 @@ ul {
   @include mq(small) {
     width: 90%;
   }
+  @include mq(narrow) {
+    font-size: .85em;
+  }
 }
 // Events
 .event--date {
   font-weight: 700;
   color: $brandcolor2;
   margin-top: 25px;
+  @include mq(narrow) {
+    font-size: .85em;
+  }
 }
 .event--place {
   font-weight: 700;
   color: $brandcolor2;
+  @include mq(narrow) {
+    font-size: .85em;
+  }
 }
 .event-book {
   margin: 25px 0;
@@ -312,6 +349,9 @@ ul {
 .event-book--action {
   background-color: $brandcolor5;
   min-width: 25%;
+  @include mq(narrow) {
+    font-size: .85em;
+  }
   &:hover {
     background-color: lighten($brandcolor5, 5%);
     a {
@@ -329,6 +369,10 @@ ul {
   padding: 0;
   font-size: 1.25em;
   border-top: 1px solid darken($brandcolor3,35%);
+  @include mq(narrow) {
+    font-size: .85em;
+    width: 90%;
+  }
   th, td {
     margin: 0;
     padding: .5em;
@@ -365,15 +409,15 @@ ul {
 .moreinfo-list-item {
   background-color: transparentize($brandcolor4,0.2);
   width: 48%;
-  // float: left;
-  // height: 575px;
   padding: 1.5em;
   margin-bottom: 25px;
   font-size: .85em;
   @include mq(small) {
     width: 100%;
   }
-
+.moreinfo-list-item--title {
+  line-height: 1.1;
+}
   &:nth-of-type(odd) {
     margin-right: 3.75%;
   }
@@ -385,6 +429,18 @@ ul {
   margin: 0 0 .5em;
   color: $brandcolor2;
   font-size: 1.2rem;
+}
+
+.link--research {
+  color: $brandcolor5;
+  text-decoration: underline;
+  @include mq(narrow) {
+    font-size: .85em;
+  }
+  @include transition();
+  &:hover {
+    color: lighten($brandcolor5,15%);
+  }
 }
 .moreinfo-list-item--attr {
   font-size: .7em;
