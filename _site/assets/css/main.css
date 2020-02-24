@@ -159,7 +159,11 @@ img { max-width: 100%; height: auto; border: 0; }
 
 .site-footer .backtotop a:hover { color: #6f1e1e; }
 
+@media (max-width: 480px) { .site-footer .backtotop { margin: 1em auto; } }
+
 .site-footer--logo { max-width: 80px; vertical-align: middle; display: inline-block; margin: 0 .5em 0 0; }
+
+@media (max-width: 480px) { .site-footer--logo { display: block; margin: .25em auto; } }
 
 .page .section { padding-top: 0; }
 
@@ -167,17 +171,29 @@ img { max-width: 100%; height: auto; border: 0; }
 
 .page .section > p { margin: 25px 10% 50px; }
 
+@media (max-width: 480px) { .page { padding: 0 5%; } }
+
 .research-list-item { background-color: rgba(255, 255, 255, 0.8); padding: 3em; margin: 25px auto; text-align: left; max-width: 960px; }
+
+@media (max-width: 480px) { .research-list-item { padding: .5em; } }
 
 .research-list-item--title { margin: 0 0 .5em; font-size: 1.2em; color: #002354; line-height: 1.1; }
 
+@media (max-width: 480px) { .research-list-item--title { line-height: 1.2; font-size: 1em; } }
+
 .research-list-item--desc { line-height: 1.3; }
 
+@media (max-width: 480px) { .research-list-item--desc { font-size: .85em; } }
+
 .research-list-item--source { font-size: .85em; color: #999; line-height: 1.2; margin: 1em 0 0; max-width: 75%; }
+
+@media (max-width: 480px) { .research-list-item--source { font-size: .75em; } }
 
 .research-list-item--link { margin: 50px 0 0; }
 
 .research-list-item--link a { color: #C03433; text-decoration: underline; }
+
+@media (max-width: 480px) { .research-list-item--link { margin: 25px 0; } }
 
 html { scroll-behavior: smooth; }
 

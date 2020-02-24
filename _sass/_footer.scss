@@ -19,6 +19,9 @@
     a:hover {
       color: darken($brandcolor5,20%);
     }
+    @include mq(narrow) {
+      margin: 1em auto;
+    }
   }
 }
 .site-footer--logo {
@@ -26,4 +29,8 @@
   vertical-align: middle;
   display: inline-block;
   margin: 0 .5em 0 0;
+  @include mq(narrow) {
+    display: block;
+    margin: .25em auto;
+  }
 }
