@@ -1,27 +1,23 @@
 // Footer
 .site-footer {
+  font-size: .85em;
   min-height: 150px;
   padding: 50px 0;
   text-align: center;
-  background-color: rgb(236,209,115);
+  background-color: rgb(230,220,120);
+  @include mq(small) {
+    text-align: center;
+    a {
+      display: block;
+      img {
+        display: block;
+        margin: 25px auto .25em;
+      }
+    }
+  }
+
   a {
     color: $brandcolor5;
-  }
-  .backtotop {
-    display: inline-block;
-    margin: 0 0 0 1em;
-    border: 1px solid transparentize($brandcolor5, 0.75);
-    border-radius: 3px;
-    padding: .2em .5em;
-    font-size: .75em;
-    font-style: normal;
-    text-transform: uppercase;
-    a:hover {
-      color: darken($brandcolor5,20%);
-    }
-    @include mq(narrow) {
-      margin: 1em auto;
-    }
   }
 }
 .site-footer--logo {
@@ -32,5 +28,33 @@
   @include mq(narrow) {
     display: block;
     margin: .25em auto;
+  }
+}
+.site-footer--email, .site-footer--instagram {
+  margin-left: 1em;
+  @include mq(small) {
+    margin-left: 0;
+  }
+  img {
+    vertical-align: middle;
+    max-width: 24px;
+    margin-right: 2px;
+  }
+}
+
+.backtotop {
+  display: inline-block;
+  margin: 0 0 0 1em;
+  border: 1px solid transparentize($brandcolor5, 0.75);
+  border-radius: 3px;
+  padding: .2em .5em;
+  font-size: .9em;
+  font-style: normal;
+  text-transform: uppercase;
+  a:hover {
+    color: darken($brandcolor5,20%);
+  }
+  @include mq(narrow) {
+    margin: 1em auto;
   }
 }
