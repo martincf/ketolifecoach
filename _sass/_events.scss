@@ -6,7 +6,7 @@
 .event--date {
   font-weight: 700;
   color: $brandcolor2;
-  margin-top: 25px;
+  margin: 25px 0;
   @include mq(narrow) {
     font-size: .85em;
   }

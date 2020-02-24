@@ -87,7 +87,7 @@ img { max-width: 100%; height: auto; border: 0; }
 
 .event { max-width: 82%; margin: 0 auto; }
 
-.event--date { font-weight: 700; color: #002354; margin-top: 25px; }
+.event--date { font-weight: 700; color: #002354; margin: 25px 0; }
 
 @media (max-width: 480px) { .event--date { font-size: .85em; } }
 
