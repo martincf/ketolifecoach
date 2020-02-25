@@ -4,15 +4,28 @@
   margin: 0 auto;
 }
 .event--date {
-  font-weight: 700;
+  font-weight: 300;
   color: $brandcolor2;
-  margin: 25px 0;
+  margin: 50px 0;
+  em {
+    font-style: normal;
+    font-size: 1.25em;
+  }
+  .event-book--action {
+    display: block;
+    margin: .25em auto 1em;
+    padding: 1em;
+    &:hover {
+      color: $brandcolor4;
+    }
+  }
   @include mq(narrow) {
     font-size: .85em;
   }
 }
 .event--place {
   font-weight: 700;
+  margin: 1em 0;
   color: $brandcolor2;
   @include mq(narrow) {
     font-size: .85em;
@@ -23,7 +36,8 @@
 }
 .event-book--action {
   background-color: $brandcolor5;
-  min-width: 25%;
+  min-width: 15%;
+  color: $brandcolor3;
   @include mq(narrow) {
     font-size: .85em;
   }

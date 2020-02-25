@@ -1,0 +1,13 @@
+{% for item in site.data.events.event %}
+  <h3 class="section--title">{{ item.title }}</h3>
+  <p class="event--place"> {{ item.place }} </p>
+{% endfor %}
+{% for item in site.data.events.dates %} <!-- Get everything in the events file -->
+<p class="event--date">
+  <em>{{ item.time }} {{ item.date }} </em>
+  <button id="checkout-button-{{ event.sku_id }}" role="link" class="event-book--action">Book online</button>
+</p>
+{% endfor %}
+<p><small>20 spaces available, book soon.</small></p>
+
+<div id="error-message"></div>

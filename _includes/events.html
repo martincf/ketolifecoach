@@ -1,13 +1,12 @@
+<script src="https://js.stripe.com/v3"></script>
 <section class="intersection">
   <img src="{{ p.url | prepend: site.baseurl }}/assets/images/ana01-w1200.jpg" alt="Ana" class="intersection--hero" />
 </section>
 <section class="section" id="events">
   <h2 class="section--header">Upcoming workshops</h2>
   <div class="event">
-    <h3 class="section--title">Introduction to keto</h3>
-    <p class="event--date">2pm–3pm Wed, 25th March 2020<br/>OR<br /> 7.30pm-8.30pm Wed, 1st April 2020</p>
-    <p class="event--place"> West Kirby Arts Centre CH48 4EH</p>
-    <p class="event-book"><button class="event-book--action"><a href="mailto:info@ketolifecoach.me?subject=Workshop&#32;booking&#32;request">Book a place – £15</a></button></p>
-    <p><small>20 spaces available, book soon.</small></p>
+    {% include event.html %}
   </div>
 </section>
+
+{% include stripe.html %}
