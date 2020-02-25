@@ -51,3 +51,12 @@
     }
   }
 }
+.event--error {
+  display: none;
+  margin: 25px auto;
+  color: $brandcolor5;
+  font-weight: 700;
+  a {
+    text-decoration: underline;
+  }
+}

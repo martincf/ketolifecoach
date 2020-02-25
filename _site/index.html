@@ -86,23 +86,24 @@
   <div class="event">
       <h3 class="section--title">Introduction to keto</h3>
   <p class="event--place">  </p>
- <!-- Get everything in the events file -->
-<p class="event--date">
-  <em>2pm – 3pm Wed, 25th March 2020 </em>
-  <button id="checkout-button-sku_GnZvzT0j8VZVrn" role="link" class="event-book--action">Book online (£15)</button>
-</p>
- <!-- Get everything in the events file -->
-<p class="event--date">
-  <em>7.30pm - 8.30pm Wed, 1st April 2020 </em>
-  <button id="checkout-button-sku_Gna1mLtsgt9TJQ" role="link" class="event-book--action">Book online (£15)</button>
-</p>
+
+  <p class="event--date">
+    <em>2pm – 3pm Wed, 25th March 2020 </em>
+    <button id="checkout-button-sku_GnZvzT0j8VZVrn" role="link" class="event-book--action">Book online (£15)</button>
+  </p>
+
+  <p class="event--date">
+    <em>7.30pm - 8.30pm Wed, 1st April 2020 </em>
+    <button id="checkout-button-sku_Gna1mLtsgt9TJQ" role="link" class="event-book--action">Book online (£15)</button>
+  </p>
 
 <p><small>Spaces still available, book soon.</small></p>
 
-<div id="error-message"></div>
+<div id="error-message" class="event--error">I'm sorry but something seems to have gone with the booking process. Please <a href="mailto:info@ketolifecoach.me">email me</a> if you see this message and I'll help out.</div>
 
   </div>
 </section>
+
 
 <script>
 (function() {
@@ -134,6 +135,7 @@
   });
 })();
 </script>
+
 <script>
 (function() {
   var stripe = Stripe('pk_live_EfC0GnSUaoy2YbS6K9ZtdUq5000GF78qFj');
@@ -164,6 +166,7 @@
   });
 })();
 </script>
+
 
 
 <section class="section consultation" id="consultation">
