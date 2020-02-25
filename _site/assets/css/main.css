@@ -113,6 +113,10 @@ img { max-width: 100%; height: auto; border: 0; }
 
 .event-book--action:hover a { color: #fff; }
 
+.event--error { display: none; margin: 25px auto; color: #C03433; font-weight: 700; }
+
+.event--error a { text-decoration: underline; }
+
 .consultation { background-color: rgba(255, 255, 255, 0.25); }
 
 .consultation-prices { width: 72%; margin: 50px auto; text-align: left; padding: 0; font-size: 1.25em; border-top: 1px solid #d7c400; }
