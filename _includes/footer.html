@@ -1,7 +1,10 @@
 <footer class="site-footer">
   <p>
     <img src="{{ p.url | prepend: site.baseurl }}/assets/images/logo-k-notype-transparent.png" alt="Keto Life Coach logo" class="site-footer--logo" />
-    {{ 'now' | date: "%Y" }} &copy; Keto Life Coach.
+    {{ 'now' | date: "%Y" }} &copy; Keto Life Coach
+    <span class="site-footer--terms">
+      <a href="/disclaimer">Disclaimer</a>
+    </span>
     <a href="mailto:info@ketolifecoach.me" class="site-footer--email">
       <img src="{{ p.url | prepend: site.baseurl }}/assets/images/icon--email.png" alt="Instagram" /> info@ketolifecoach.me
     </a>

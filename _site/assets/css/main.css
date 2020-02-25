@@ -179,6 +179,14 @@ img { max-width: 100%; height: auto; border: 0; }
 
 .site-footer--email img, .site-footer--instagram img { vertical-align: middle; max-width: 24px; margin-right: 2px; }
 
+.site-footer--terms { display: inline-block; margin-left: .5em; }
+
+@media (max-width: 800px) { .site-footer--terms { display: block; } }
+
+.site-footer--terms:before { content: "|"; color: rgba(0, 35, 84, 0.15); padding-right: .5em; }
+
+@media (max-width: 800px) { .site-footer--terms:before { display: none; } }
+
 .backtotop { display: inline-block; margin: 0 0 0 1em; border: 1px solid rgba(192, 52, 51, 0.25); border-radius: 3px; padding: .2em .5em; font-size: .9em; font-style: normal; text-transform: uppercase; }
 
 .backtotop a:hover { color: #6f1e1e; }
@@ -286,5 +294,11 @@ button a:hover, button a:active { transform: scale(1.03); }
 @media (max-width: 480px) { .section--intro { font-size: .85em; } }
 
 .intersection--hero { width: 100%; }
+
+.content-only { max-width: 82%; margin: 0 auto; text-align: justify; }
+
+@media (max-width: 480px) { .content-only { text-align: left; } }
+
+.content-only p { margin: 0 0 1em; }
 
 /*# sourceMappingURL=main.css.map */

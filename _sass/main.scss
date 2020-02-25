@@ -189,3 +189,14 @@ ul {
 .intersection--hero {
   width: 100%;
 }
+.content-only {
+  max-width: 82%;
+  margin: 0 auto;
+  text-align: justify;
+  @include mq(narrow) {
+    text-align: left;
+  }
+  p {
+    margin: 0 0 1em;
+  }
+}

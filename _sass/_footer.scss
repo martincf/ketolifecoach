@@ -41,7 +41,22 @@
     margin-right: 2px;
   }
 }
+.site-footer--terms {
+  display: inline-block;
+  margin-left: .5em;
+  @include mq(small) {
+    display: block;
+  }
+  &:before {
+    content: "|";
+    color: transparentize($brandcolor2,0.85);
+    padding-right: .5em;
+    @include mq(small) {
+      display: none;
+    }
 
+  }
+}
 .backtotop {
   display: inline-block;
   margin: 0 0 0 1em;
