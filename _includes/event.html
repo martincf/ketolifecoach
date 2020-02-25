@@ -5,7 +5,7 @@
 {% for item in site.data.events.dates %} <!-- Get everything in the events file -->
 <p class="event--date">
   <em>{{ item.time }} {{ item.date }} </em>
-  <button id="checkout-button-{{ event.sku_id }}" role="link" class="event-book--action">Book online</button>
+  <button id="checkout-button-{{ item.sku_id }}" role="link" class="event-book--action">Book online</button>
 </p>
 {% endfor %}
 <p><small>Spaces still available, book soon.</small></p>
