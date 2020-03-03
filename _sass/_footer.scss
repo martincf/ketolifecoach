@@ -19,9 +19,12 @@
   a {
     color: $brandcolor5;
   }
+  p {
+    margin: 0 0 1em;
+  }
 }
 .site-footer--logo {
-  max-width: 80px;
+  max-width: 50px;
   vertical-align: middle;
   display: inline-block;
   margin: 0 .5em 0 0;
@@ -30,7 +33,7 @@
     margin: .25em auto;
   }
 }
-.site-footer--email, .site-footer--instagram {
+.site-footer--email, .site-footer--instagram, .site-footer--facebook {
   margin-left: 1em;
   @include mq(small) {
     margin-left: 0;

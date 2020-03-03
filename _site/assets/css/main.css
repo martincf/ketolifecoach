@@ -169,15 +169,17 @@ img { max-width: 100%; height: auto; border: 0; }
 
 .site-footer a { color: #C03433; }
 
-.site-footer--logo { max-width: 80px; vertical-align: middle; display: inline-block; margin: 0 .5em 0 0; }
+.site-footer p { margin: 0 0 1em; }
+
+.site-footer--logo { max-width: 50px; vertical-align: middle; display: inline-block; margin: 0 .5em 0 0; }
 
 @media (max-width: 480px) { .site-footer--logo { display: block; margin: .25em auto; } }
 
-.site-footer--email, .site-footer--instagram { margin-left: 1em; }
+.site-footer--email, .site-footer--instagram, .site-footer--facebook { margin-left: 1em; }
 
-@media (max-width: 800px) { .site-footer--email, .site-footer--instagram { margin-left: 0; } }
+@media (max-width: 800px) { .site-footer--email, .site-footer--instagram, .site-footer--facebook { margin-left: 0; } }
 
-.site-footer--email img, .site-footer--instagram img { vertical-align: middle; max-width: 24px; margin-right: 2px; }
+.site-footer--email img, .site-footer--instagram img, .site-footer--facebook img { vertical-align: middle; max-width: 24px; margin-right: 2px; }
 
 .site-footer--terms { display: inline-block; margin-left: .5em; }
 
