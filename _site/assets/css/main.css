@@ -101,6 +101,12 @@ img { max-width: 100%; height: auto; border: 0; }
 
 @media (max-width: 480px) { .event--place { font-size: .85em; } }
 
+.event--maplink a { color: #C03433; }
+
+.event--maplink a:hover { color: #6f1e1e; }
+
+.event--maplink a:before { content: " "; position: relative; z-index: -1; left: 0; top: .4em; display: inline-block; min-width: 25px; min-height: 25px; background: transparent url(/assets/images/icon--maplink.png) 0 0 no-repeat; background-size: contain; }
+
 .event-book { margin: 25px 0; }
 
 .event-book--action { background-color: #C03433; min-width: 15%; color: #FFF58A; }

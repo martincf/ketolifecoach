@@ -1,5 +1,6 @@
   <h3 class="section--title">{{ site.data.events.event.title }}</h3>
-  <p class="event--place"> {{ item.place }} </p>
+  <p class="event--place"> {{ site.data.events.event.place }} </p>
+  <p class="event--maplink"><a href="{{ site.data.events.event.maplink }}">View on Google Maps</a></p>
 {% for item in site.data.events.event.dates %}
   <p class="event--date">
     <em>{{ item.time }} {{ item.date }} </em>
