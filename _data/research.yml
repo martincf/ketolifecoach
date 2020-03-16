@@ -22,7 +22,7 @@
   source: "ExVivos, LLC, Hastings-on-Hudson, NY, United States of America, 2 Georgetown University Law Center, Washington, DC"
   link: https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0139817&type=printable
   desc: |
-    Research have suggested that low carbohydrate, high-fat diets are associated with significantly greater weight loss compared with low-fat diets in head to head randomized control trials.
+    Research have suggested that low carbohydrate, high-fat diets are associated with significantly greater weight loss compared with low-fat diets in head to head randomized control trials
 
 - title: "Effect of ketogenic Mediterranean diet with phytoextracts and low carbohydrates/high-protein meals on weight, cardiovascular risk factors, body composition and diet compliance in Italian council employees."
   question: "This is a question"
@@ -52,7 +52,7 @@
   source: BMC Gastroenterology, 2007
   link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2245945/pdf/1471-230X-7-46.pdf
   desc: |
-    The aim of this study was to investigate the effect of apple cider vinegar on delayed gastric emptying rate on diabetes mellitus patients. This study shows that vinegar affects insulin-dependent diabetes mellitus patients with diabetic gastroparesis by reducing the gastric emptying rate even further, and this might be a disadvantage regarding to their glycaemic control. Ten patients with type 1 diabetes and diabetic gastroparesis, including one patient who had undergone vagotomy, were included and completed the investigator blinded crossover trial. The gastric emptying rate (GER) was measured using standardized real-time ultrasonography.
+    Ten patients with type 1 diabetes and diabetic gastroparesis, including one patient who had undergone vagotomy, were included and completed the investigator blinded crossover trial. The gastric emptying rate (GER) was measured using standardized real-time ultrasonography. The GER was calculated as the percentage change in the antral cross-sectional area 15 and 90 minutes after ingestion of 300 g rice pudding and 200 ml water (GER1), or 300 g rice pudding and 200 ml water with 30 ml apple cider vinegar (GER2). The subjects drank 200 ml water daily before breakfast one week before the measurement of GER1. The same subjects drank 200 ml water with 30 ml vinegar daily before breakfast for two weeks before the measurement of GER2.
 
 - title: Effect of cinnamon on postprandial blood glucose, gastric emptying, and satiety in healthy subjects.
   question: |
@@ -64,15 +64,46 @@
   link: |
     https://watermark.silverchair.com/znu00607001552.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAAmEwggJdBgkqhkiG9w0BBwagggJOMIICSgIBADCCAkMGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQM8I8qHVKVQVTCt_8IAgEQgIICFGcjqwnrKSxqt9t7mjTq1KfFCQ_Z4f_2xiZBlrRSmv6MPgmfDbwaLvswmZQFc8pkS7sf4qO1u7-F5zOaaNvMjPa87-t7aVyESxGBbEMEQATpHfaRoXIw26TqebE30Be6tZf9n68nc_ZVXvlseREfxxNPrCkqNFmusiE6bLw20pHPIROWnRmLObuhwxAo90pNh_AiWflfS6AAEK_eaH3RYbYaxdleS3QI052DkFOM0N2E69JdWiaSQPvj2BsmD7Kvw5JikbH7Ym2oDk7JX3LpjHieCrzuNPicQ9WcteyFK6Iwqj7ZzPT2-y_3AsnQEiLBH_Dgs7q-AlkC8W8bfoJ0feUVx_TIK5SNkQ6rB4RGL1rfvzdy-HvFrJacWfkwu5MIZZLqzsnBjsbMqQVyHtpG9brc91ASey35hP0WWHsz-_CmnqQCSIs3E6yJ8zRuztA-mXVlT0eLhuN_Zp6CmOGOEo4yRwoRF6LggjZ0sqH2Jah4ybm10Wr-CP51S3QT8hDH7z2jESKRSLfQAddq6QfWM79EVGTs8cuZCR409SBRM0ORP2D_Taj2Ztfd2Dbl_lFABtA3-A_pXx3YyrMqJoQZusO-3tnYLKnztzZfTXT4xKXKDM8HtbS2IMq3_a31aKUfuc8c5F2pUxKewILmweCFTRTpguuIEdfUGKVdAm2XrJ0LDc9lTgBQXuTbV2BeuVHvBp1bZP4
   desc: |
-    Study aimed to find out the effect of cinnamon on the rate of gastric emptying, the postprandial blood glucose response, and satiety in healthy subjects. The study found that cinnamon reduced postprandial blood glucose and delayed gastric emptying without affecting satiety. Inclusion of cinnamon in the diet lowers the postprandial glucose response, a change that is at least partially explained by a delayed gastric emptying rate (GER). The gastric emptying rate (GER) was measured by using standardized real-time ultrasonography. Fourteen healthy subjects were assessed by using a crossover trial.
+    The gastric emptying rate (GER) was measured by using standardized real-time ultrasonography. Fourteen healthy subjects were assessed by using a crossover trial. The subjects were examined after an 8-h fast if they had normal fasting blood glucose concentrations. GER was calculated as the percentage change in the antral cross-sectional area 15-90 min after ingestion of 300 g rice pudding (GER1) or 300 g rice pudding and 6 g cinnamon (GER2).
+    The median value of GER1 was 37%, and that of GER2 was 34.5%. The addition of cinnamon to the rice pudding significantly delayed gastric emptying and lowered the postprandial glucose response (P < 0.05 for both). The reduction in the postprandial blood glucose concentration was much more noticeable and pronounced than was the lowering of the GER. The effect of cinnamon on satiety was not significant.
 
 - title: Vinegar Consumption Increases Insulin-Stimulated Glucose Uptake by the Forearm Muscle in Humans with Type 2 Diabetes
   question: |
     The aim of this randomised, crossover study was to investigate the effect of vinegar on glucose metabolism in muscle which is the most important tissue for insulin-stimulated glucose disposal.
   answer: |
-    In DM2 vinegar reduces postprandial hyperglycaemia, hyperinsulinaemia, and hypertriglyceridaemia without affecting lipolysis. Vinegar's effect on carbohydrate metabolism may be partly accounted for by an increase in glucose uptake, demonstrating an improvement in insulin action in skeletal muscle
+    In DM2 vinegar reduces postprandial hyperglycaemia, hyperinsulinaemia, and hypertriglyceridaemia without affecting lipolysis. Vinegar's effect on carbohydrate metabolism may be partly accounted for by an increase in glucose uptake, demonstrating an improvement in insulin action in skeletal muscle.
   attribution:
   source: Journal of Diabetes Research, 2015
   link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4438142/pdf/JDR2015-175204.pdf
   desc: |
-    The aim of this randomised, crossover study was to investigate the effect of vinegar on glucose metabolism in muscle which is the most important tissue for insulin-stimulated glucose disposal. In DM2 vinegar reduces postprandial hyperglycaemia, hyperinsulinaemia, and hypertriglyceridaemia without affecting lipolysis. Vinegar's effect on carbohydrate metabolism may be partly accounted for by an increase in glucose uptake, demonstrating an improvement in insulin action in skeletal muscle Vinegar's effect on carbohydrate metabolism may be partly accounted for by an increase in glucose uptake, demonstrating an improvement in insulin action in skeletal muscleEleven subjects with DM2 consumed vinegar or placebo (at random order on two separate days, a week apart), before a mixed meal. Plasma glucose, insulin, triglycerides, nonesterified fatty acids (NEFA), and glycerol were measured preprandially and at 30-60 min for 300 min postprandially from the radial artery and from a forearm vein.
+    Eleven subjects with DM2 consumed vinegar or placebo (at random order on two separate days, a week apart), before a mixed meal. Plasma glucose, insulin, triglycerides, nonesterified fatty acids (NEFA), and glycerol were measured preprandially and at 30-60 min for 300 min postprandially from the radial artery and from a forearm vein. Muscle blood flow was measured with strain-gauge plethysmography. Glucose uptake was calculated as the arteriovenous difference of glucose multiplied by blood flow.
+
+- title: High Caloric Intake at Breakfast vs. Dinner Differentially Influences Weight Loss of Overweight and Obese Women
+  question: |
+  answer: |
+  attribution:
+  source: Obesity Journal, 2013
+  link: https://onlinelibrary.wiley.com/doi/pdf/10.1002/oby.20460
+  desc: |
+    This study compares a weight loss diet with high caloric intake during breakfast to an isocaloric diet with high caloric intake at dinner. The BF group showed greater weight loss and waist circumference reduction. Although fasting
+    glucose, insulin, and ghrelin were reduced in both groups, fasting glucose, insulin, and HOMA-IR decreased significantly to a greater extent in the BF group. The study concludes that high-calorie breakfast with reduced intake at dinner is beneficial and might be a useful
+    alternative for the management of obesity and metabolic syndrome.
+
+- title: Probiotics promote gut health through stimulation of epithelial innate immunity
+  question: |
+  answer: |
+  attribution:
+  source: PNAS, 2010
+  link: https://www.pnas.org/content/pnas/107/1/454.full.pdf
+  desc: |
+    The research support the hypothesis that probiotics promote gut health through stimulation, rather than suppression, of the innate immune system. Furthermore, the findings provide the perspective that
+    defects in innate immunity may play a critical role in the pathogenesis and progression of intestinal disorders, such as inflammatory bowel disease.
+
+- title: "The Impact of Nighttime Eating: A Randomized Controlled Trial of Daytime vs. Delayed Eating on Weight and Metabolism in Adults of Normal Weight"
+  question: |
+  answer: |
+  attribution:
+  source: Sleep, 2019
+  link: https://academic.oup.com/sleep/article-abstract/42/Supplement_1/A15/5451138
+  desc: |
+    This controlled trial provides the first experimental evidence that an 8-week daytime eating schedule, as compared to an 8-week delayed eating schedule, promotes weight loss and a positive profile for energy metabolism and hormonal markers in healthy adults of normal weight. Thus, nighttime eating contributes to weight gain and metabolic dysfunction independent of calorie intake.
