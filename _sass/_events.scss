@@ -78,3 +78,10 @@
     text-decoration: underline;
   }
 }
+.section.virtualevents {
+  background-color: lighten($brandcolor3,15%);
+  margin-bottom: 0;
+  .event {
+    margin-bottom: 0;
+  }
+}

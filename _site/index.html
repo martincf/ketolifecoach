@@ -105,6 +105,22 @@
   </div>
 </section>
 
+<section class="section virtualevents">
+  <div class="event">
+    <h2 class="section--header">Online consultations</h2>
+    <h3 class="section--title">Personal intro to keto</h3>
+    <p class="event--place">Skype, Zoom, Facetime, or Google Meet</p>
+    <p class="event--date">
+      <em>Time and date to be arranged after payment</em>
+      <button id="checkout-button-sku_H6LUueN2lwmyYT" role="link" class="event-book--action">Book online (£35)</button>
+    </p>
+    <h4>How does it work?</h4>
+    <p class="section--intro">Within your first private online consultation we will cover the principles of a ketogenic diet - how to implement it successful, answer your questions, and we will talk thorough the best strategy for you to start the process of changing your eating habits and reaching optimal health.</p>
+    <p class="section--intro">If you need additional support you can book as many follow up sessions needed to help you achieve your personal objectives of health and weight loss.</p>
+    <p class="section--intro">Once you've booked I will email you to confirm the date and time for a live-chat through Skype, Facetime, Zoom, or Google Meet.</p>
+  </div>
+</section>
+
 
 <script>
 (function() {
@@ -168,6 +184,38 @@
 })();
 </script>
 
+
+<script>
+  // Online consultation
+(function() {
+  var stripe = Stripe('pk_live_EfC0GnSUaoy2YbS6K9ZtdUq5000GF78qFj');
+
+  var checkoutButton = document.getElementById('checkout-button-sku_H6LUueN2lwmyYT');
+  checkoutButton.addEventListener('click', function () {
+    // When the customer clicks on the button, redirect
+    // them to Checkout.
+    stripe.redirectToCheckout({
+      items: [{sku: 'sku_H6LUueN2lwmyYT', quantity: 1}],
+
+      // Do not rely on the redirect to the successUrl for fulfilling
+      // purchases, customers may not always reach the success_url after
+      // a successful payment.
+      // Instead use one of the strategies described in
+      // https://stripe.com/docs/payments/checkout/fulfillment
+      successUrl: 'http://www.ketolifecoach.me/success',
+      cancelUrl: 'http://www.ketolifecoach.me/canceled',
+    })
+    .then(function (result) {
+      if (result.error) {
+        // If `redirectToCheckout` fails due to a browser or network
+        // error, display the localized error message to your customer.
+        var displayError = document.getElementById('error-message');
+        displayError.textContent = result.error.message;
+      }
+    });
+  });
+})();
+</script>
 
 
 <section class="section consultation" id="consultation">
