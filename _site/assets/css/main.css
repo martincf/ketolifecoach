@@ -173,9 +173,7 @@ img { max-width: 100%; height: auto; border: 0; }
 
 .site-footer { font-size: .85em; min-height: 150px; padding: 50px 0; text-align: center; background-color: #e6dc78; }
 
-@media (max-width: 800px) { .site-footer { text-align: center; }
-  .site-footer a { display: block; }
-  .site-footer a img { display: block; margin: 25px auto .25em; } }
+@media (max-width: 800px) { .site-footer { text-align: center; } .site-footer a { display: block; } .site-footer a img { display: block; margin: 25px auto .25em; } }
 
 .site-footer a { color: #C03433; }
 
