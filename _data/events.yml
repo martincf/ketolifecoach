@@ -1,12 +1,12 @@
-event:
-  title: Introduction to keto
-  place: West Kirby Arts Centre CH48 4EL
-  maplink: https://goo.gl/maps/XzW6UxYxHHJs7qcX6
-  price: 15
-  dates:
-    - date: "Wed, 8th July 2020"
-      time: 2.00pm – 3.00pm
-      sku_id: sku_GnZvzT0j8VZVrn
-    - date: "Wed, 15th July 2020"
-      time: 7.30pm - 8.30pm
-      sku_id: sku_Gna1mLtsgt9TJQ
+# event:
+#   title: Introduction to keto
+#   place: West Kirby Arts Centre CH48 4EL
+#   maplink: https://goo.gl/maps/XzW6UxYxHHJs7qcX6
+#   price: 15
+#   dates:
+#     - date: "Wed, 8th July 2020"
+#       time: 2.00pm – 3.00pm
+#       sku_id: sku_GnZvzT0j8VZVrn
+#     - date: "Wed, 15th July 2020"
+#       time: 7.30pm - 8.30pm
+#       sku_id: sku_Gna1mLtsgt9TJQ
