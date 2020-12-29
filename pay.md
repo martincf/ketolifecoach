@@ -5,6 +5,8 @@ intro: ""
 tags: stripe
 sku_id: sku_If0u6EagEpPwve
 price: 75
+permalink: /pay/
+
 ---
 
 ## Please pay online to confirm your booking
