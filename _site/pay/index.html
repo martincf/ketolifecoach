@@ -12,7 +12,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>Success - Keto Life Coach</title>
+    <title>Payment - Keto Life Coach</title>
     <link rel="stylesheet" href="https://use.typekit.net/hrx8gjc.css">
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
@@ -29,21 +29,63 @@
   </h2>
 </header>
 
+<script src="https://js.stripe.com/v3"></script>
 
 <main class="page">
 <section class="section">
-  <h2 class="section--header">Success</h2>
-    
-      <h2 id="thank-you-for-your-booking">Thank you for your booking!</h2>
+  <h2 class="section--header">Payment</h2>
 
-<p>I’ll be touch shortly by email with further details about the booking.</p>
+      <h2 id="please-pay-online-to-confirm-your-booking">Please pay online to confirm your booking</h2>
 
-    
-    
-    
+<p>Pay online via Stripe. Once payment is made I will contact you with confirmation.</p>
+
+      <p>
+        <button id="checkout-button-sku_If0u6EagEpPwve" role="link" class="event-book--action">Pay now (£75)</button>
+      </p>
+      <p class="stripe">
+        <img class="stripe--logo" src="/assets/images/logo-stripe.png" alt="Powered by Stripe" />
+        </p>
+    <div id="error-message" class="event--error">I'm sorry but something seems to have gone with the booking process. Please <a href="mailto:info@ketolifecoach.me">email me</a> if you see this message and I'll help out.</div>
+
 
 </section>
+
 </main>
+
+
+
+
+<script>
+  // Online consultation
+(function() {
+  var stripe = Stripe('pk_live_EfC0GnSUaoy2YbS6K9ZtdUq5000GF78qFj');
+
+  var checkoutButton = document.getElementById('checkout-button-sku_If0u6EagEpPwve');
+  checkoutButton.addEventListener('click', function () {
+    // When the customer clicks on the button, redirect
+    // them to Checkout.
+    stripe.redirectToCheckout({
+      items: [{sku: 'sku_If0u6EagEpPwve', quantity: 1}],
+
+      // Do not rely on the redirect to the successUrl for fulfilling
+      // purchases, customers may not always reach the success_url after
+      // a successful payment.
+      // Instead use one of the strategies described in
+      // https://stripe.com/docs/payments/checkout/fulfillment
+      successUrl: 'http://www.ketolifecoach.me/success',
+      cancelUrl: 'http://www.ketolifecoach.me/canceled',
+    })
+    .then(function (result) {
+      if (result.error) {
+        // If `redirectToCheckout` fails due to a browser or network
+        // error, display the localized error message to your customer.
+        var displayError = document.getElementById('error-message');
+        displayError.textContent = result.error.message;
+      }
+    });
+  });
+})();
+</script>
 
 <footer class="site-footer">
   <p>

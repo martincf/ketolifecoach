@@ -311,4 +311,6 @@ button a:hover, button a:active { transform: scale(1.03); }
 
 .content-only p { margin: 0 0 1em; }
 
+.stripe--logo { max-width: 150px; }
+
 /*# sourceMappingURL=main.css.map */
