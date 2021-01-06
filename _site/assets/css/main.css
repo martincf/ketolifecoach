@@ -71,11 +71,11 @@ img { max-width: 100%; height: auto; border: 0; }
 
 @media (max-width: 480px) { .hero-ctas--cta:first-of-type { margin-right: 0; margin-bottom: 1em; } }
 
-.hero--sticker { background-color: #C03433; color: #fff; width: 100px; height: 100px; border-radius: 50%; font-size: .7em; display: block; position: absolute; right: 10%; top: -30px; line-height: 1.1; z-index: -1; }
+.hero--sticker { background-color: #C03433; color: #fff; width: 100px; height: 100px; border-radius: 50%; font-size: .7em; display: block; position: absolute; right: 10%; top: -120px; line-height: 1.1; z-index: -1; }
 
-@media (max-width: 800px) { .hero--sticker { top: -50px; } }
+@media (max-width: 800px) { .hero--sticker { top: -120px; } }
 
-@media (max-width: 480px) { .hero--sticker { right: 50%; top: -30px; transform: translateX(50px); } }
+@media (max-width: 480px) { .hero--sticker { right: 50%; top: -100px; transform: translateX(50px); } }
 
 .hero--sticker em { position: relative; display: block; top: 50%; transform: translateY(-50%); font-style: normal; }
 
@@ -84,8 +84,6 @@ img { max-width: 100%; height: auto; border: 0; }
 @media (max-width: 800px) { .splash { background-size: contain; background-position: 0 -100px; } }
 
 @media (max-width: 480px) { .splash { background-position: 0 -50px; padding-bottom: 0; } }
-
-.splash .col { background-color: red; }
 
 .event { max-width: 82%; margin: 0 auto; }
 
@@ -234,6 +232,8 @@ img { max-width: 100%; height: auto; border: 0; }
 .research-list-item--desc { line-height: 1.3; }
 
 @media (max-width: 480px) { .research-list-item--desc { font-size: .85em; } }
+
+.research-list-item--content p { margin: 1em 0; }
 
 .research-list-item--source { font-size: .85em; color: #999; line-height: 1.2; margin: 1em 0 0; max-width: 75%; }
 

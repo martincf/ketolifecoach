@@ -5,7 +5,8 @@ title: Keto during COVID-19
 date: 2021-01-05
 published: true
 permalink: /posts/keto-during-covid
-excerpt:
+desc:
+link:
 ---
 
 ## Covid-Positive UK  - 2021

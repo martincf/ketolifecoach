@@ -97,15 +97,15 @@
   display: block;
   position: absolute;
   right: 10%;
-  top: -30px;
+  top: -120px;
   line-height: 1.1;
   z-index: -1;
   @include mq(small) {
-    top: -50px;
+    top: -120px;
   }
   @include mq(narrow) {
     right: 50%;
-    top: -30px;
+    top: -100px;
     transform: translateX(50px);
   }
 
