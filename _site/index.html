@@ -46,7 +46,7 @@
 
 <div class="hero-ctas">
   <button class="hero-ctas--cta">
-    <a href="#events">Upcoming workshops</a>
+    <a href="#events">Online workshops</a>
   </button>
   <button class="hero-ctas--cta">
     <a href="#consultation">Consultation options</a>
@@ -82,10 +82,26 @@
   <img src="/assets/images/ana01-w1200.jpg" alt="Ana" class="intersection--hero" />
 </section>
 <section class="section" id="events">
-  <h2 class="section--header">Upcoming workshops</h2>
+  <h2 class="section--header">Online workshops</h2>
   <div class="event">
     
-  <h2>Sorry, there are no events scheduled at this time.</h2>
+  <h3 class="section--title">Introduction to keto</h3>
+  <!-- <p class="event--maplink"><a href="https://goo.gl/maps/XzW6UxYxHHJs7qcX6">View on Google Maps</a></p> -->
+
+  <p class="event--date">
+    <em>Thursday, 14th January 2021 </em>
+    <strong>7.00pm – 8.30pm</strong>
+    <button id="checkout-button-sku_GnZvzT0j8VZVrn" role="link" class="event-book--action">Book online (£10)</button>
+  </p>
+  
+    <p class="event-zoom"><img src="/assets/images/logo-zoom.png" alt="Zoom" class="event-zoom--logo" /></p>
+  
+  <p class="event--place"> Maximum 12 spaces – book soon! </p>
+
+
+<p><small>Due to COVID-19 health and safety restrictions, all workshops are conducted online using the Zoom platform.</small></p>
+
+<div id="error-message" class="event--error">I'm sorry but something seems to have gone with the booking process. Please <a href="mailto:info@ketolifecoach.me">email me</a> if you see this message and I'll help out.</div>
 
 
   </div>
@@ -93,7 +109,7 @@
 
 <section class="section virtualevents" id="consultation">
   <div class="event">
-    <h2 class="section--header">Online consultations</h2>
+    <h2 class="section--header">One-to-one consultation</h2>
     <h3 class="section--title">Personal intro to keto</h3>
     <p class="event--place">Skype, Zoom, Facetime, or Google Meet</p>
     <p class="event--date">
@@ -107,6 +123,37 @@
   </div>
 </section>
 
+
+<script>
+(function() {
+  var stripe = Stripe('pk_live_EfC0GnSUaoy2YbS6K9ZtdUq5000GF78qFj');
+
+  var checkoutButton = document.getElementById('checkout-button-sku_GnZvzT0j8VZVrn');
+  checkoutButton.addEventListener('click', function () {
+    // When the customer clicks on the button, redirect
+    // them to Checkout.
+    stripe.redirectToCheckout({
+      items: [{sku: 'sku_GnZvzT0j8VZVrn', quantity: 1}],
+
+      // Do not rely on the redirect to the successUrl for fulfilling
+      // purchases, customers may not always reach the success_url after
+      // a successful payment.
+      // Instead use one of the strategies described in
+      // https://stripe.com/docs/payments/checkout/fulfillment
+      successUrl: 'http://www.ketolifecoach.me/success',
+      cancelUrl: 'http://www.ketolifecoach.me/canceled',
+    })
+    .then(function (result) {
+      if (result.error) {
+        // If `redirectToCheckout` fails due to a browser or network
+        // error, display the localized error message to your customer.
+        var displayError = document.getElementById('error-message');
+        displayError.textContent = result.error.message;
+      }
+    });
+  });
+})();
+</script>
 
 
 <script>
@@ -217,7 +264,7 @@ What seems evident is the danger of obesity to health.</p>
 <footer class="site-footer">
   <p>
     <img src="/assets/images/logo-k-notype-transparent.png" alt="Keto Life Coach logo" class="site-footer--logo" />
-    2020 &copy; Keto Life Coach
+    2021 &copy; Keto Life Coach
     <span class="site-footer--terms">
       <a href="/disclaimer">Disclaimer</a>
     </span>

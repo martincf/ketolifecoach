@@ -89,7 +89,9 @@ img { max-width: 100%; height: auto; border: 0; }
 
 .event--date { font-weight: 300; color: #002354; margin: 50px 0; }
 
-.event--date em { font-style: normal; font-size: 1.25em; }
+.event--date em + strong { margin-bottom: 1em; }
+
+.event--date em, .event--date strong { display: block; font-style: normal; font-size: 1.25em; }
 
 .event--date .event-book--action { display: block; margin: .25em auto 1em; padding: 1em; }
 
@@ -126,6 +128,8 @@ img { max-width: 100%; height: auto; border: 0; }
 .section.virtualevents { background-color: #fffcd7; margin-bottom: 0; }
 
 .section.virtualevents .event { margin-bottom: 0; }
+
+.event-zoom--logo { max-width: 100px; }
 
 .consultation { background-color: rgba(255, 255, 255, 0.25); }
 
