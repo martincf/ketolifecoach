@@ -85,6 +85,8 @@ img { max-width: 100%; height: auto; border: 0; }
 
 @media (max-width: 480px) { .splash { background-position: 0 -50px; padding-bottom: 0; } }
 
+.splash .col { background-color: red; }
+
 .event { max-width: 82%; margin: 0 auto; }
 
 .event--date { font-weight: 300; color: #002354; margin: 50px 0; }
@@ -214,6 +216,12 @@ img { max-width: 100%; height: auto; border: 0; }
 .page .section > p { margin: 25px 10% 50px; }
 
 @media (max-width: 480px) { .page { padding: 0 5%; } }
+
+.posts { padding: 3em; background-color: white; }
+
+.post-content { background-color: rgba(255, 255, 255, 0.8); padding: 3em; margin: 25px auto; text-align: left; max-width: 960px; }
+
+@media (max-width: 480px) { .post-content { padding: .5em; } }
 
 .research-list-item { background-color: rgba(255, 255, 255, 0.8); padding: 3em; margin: 25px auto; text-align: left; max-width: 960px; }
 

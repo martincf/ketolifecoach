@@ -1,0 +1,18 @@
+{% include head.html %}
+{% include header.html %}
+
+<main class="post">
+<section class="post-content">
+  <h2 class="section--header">{{ page.title }}</h2>
+    {% if page.tags contains "content-only" %}
+    <div class="content-only">
+      {{ content }}
+    </div>
+    {% else %}
+      {{ content }}
+    {% endif %}
+
+</section>
+</main>
+
+{% include footer.html %}

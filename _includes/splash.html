@@ -21,3 +21,11 @@
       <p>After 3 years of research and self-experimentation I have mastered the challenges of reaching optimum health. I will give you the practical advice you need from the vast amount of research behind the ketogenic diet. I will guide you through the process, in a way you feel most comfortable with.</p>
     </div>
 </section>
+
+<div class="posts">
+  {% for post in site.posts %}
+  <a class="" href="{{ post.url }}">
+    {{ post.title }}
+  </a>
+  {% endfor %}
+</div>
