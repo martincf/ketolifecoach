@@ -1,0 +1,8 @@
+.contact {
+  background-color: $brandcolor4;
+  padding: 50px 10% !important;
+  @include cf();
+}
+.contact--portrait {
+  float: left;
+}

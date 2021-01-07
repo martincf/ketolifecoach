@@ -25,15 +25,35 @@ button { overflow: visible; font: inherit; cursor: pointer; letter-spacing: inhe
 
 img { max-width: 100%; height: auto; border: 0; }
 
-.header { margin: 0 0 50px; }
+.header { margin: 0 0 50px; padding: 0 10%; background-color: white; }
 
-.brand { text-align: center; max-width: 21%; min-width: 250px; margin: 0 auto; padding: 25px 0; }
+.header:before, .header:after { content: " "; display: table; }
+
+.header:after { clear: both; }
+
+.brand { float: left; text-align: left; max-width: 200px; margin: 0; padding: 25px 0; }
 
 .brand--logo { max-width: 20%; min-width: 200px; transition: all .2s ease-in-out; }
 
 .brand--logo:hover { transform: scale(1.05); }
 
-.strapline { font-weight: 500; font-size: .9em; text-transform: uppercase; text-align: center; color: #002354; margin: 0 auto 0; max-width: 30%; min-width: 300px; }
+.header--nav { float: right; font-weight: 400; margin: 70px 0 0 25px; }
+
+@media (max-width: 800px) { .header--nav { display: none; } }
+
+.header--nav li { display: inline-block; margin: 0 0 0 10px; vertical-align: middle; }
+
+.header--nav a { display: block; border-bottom: 0 solid #474369; transition: all 0.2s ease; }
+
+.header--nav a:hover { border-bottom: 3px solid #706D8B; transform: translateY(-2px); }
+
+.nav--twitter { width: 36px; line-height: .3; }
+
+.nav--twitter a { display: block; border-bottom: none; }
+
+.nav--twitter a:hover { border-bottom: none; transform: scale(1.1); }
+
+.strapline { font-weight: 500; font-size: .9em; text-transform: uppercase; text-align: center; color: #002354; margin: 0 auto; max-width: 30%; min-width: 300px; margin-top: 50px; }
 
 .hero { position: relative; text-align: center; overflow: visible; }
 
@@ -71,7 +91,7 @@ img { max-width: 100%; height: auto; border: 0; }
 
 @media (max-width: 480px) { .hero-ctas--cta:first-of-type { margin-right: 0; margin-bottom: 1em; } }
 
-.hero--sticker { background-color: #C03433; color: #fff; width: 100px; height: 100px; border-radius: 50%; font-size: .7em; display: block; position: absolute; right: 10%; top: -120px; line-height: 1.1; z-index: -1; }
+.hero--sticker { background-color: #C03433; color: #fff; width: 100px; height: 100px; border-radius: 50%; font-size: .7em; display: block; position: absolute; z-index: 1000; right: 10%; top: -60px; line-height: 1.1; }
 
 @media (max-width: 800px) { .hero--sticker { top: -120px; } }
 
@@ -244,6 +264,14 @@ img { max-width: 100%; height: auto; border: 0; }
 .research-list-item--link a { color: #C03433; text-decoration: underline; }
 
 @media (max-width: 480px) { .research-list-item--link { margin: 25px 0; } }
+
+.contact { background-color: #fff; padding: 50px 10% !important; }
+
+.contact:before, .contact:after { content: " "; display: table; }
+
+.contact:after { clear: both; }
+
+.contact--portrait { float: left; }
 
 html { scroll-behavior: smooth; }
 

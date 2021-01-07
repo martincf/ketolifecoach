@@ -1,0 +1,45 @@
+// Nav
+
+.header--nav {
+  float: right;
+  font-weight: 400;
+  margin: 70px 0 0 25px;
+  @include mq(small) {
+    display: none;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0 0 0 10px;
+    vertical-align: middle;
+  }
+
+  a {
+    // color: $brandColor2;
+    display: block;
+    border-bottom: 0 solid #474369;
+
+    @include trans-ease();
+
+    &:hover {
+      border-bottom: 3px solid #706D8B;
+      transform: translateY(-2px);
+    }
+
+  }
+}
+
+.nav--twitter {
+  width: 36px;
+  line-height: .3;
+
+  a {
+    display: block;
+    border-bottom: none;
+
+    &:hover {
+      border-bottom: none;
+      transform: scale(1.1);
+    }
+  }
+}
