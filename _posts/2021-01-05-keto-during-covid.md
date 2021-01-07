@@ -27,7 +27,7 @@ We can make better choices about the foods we eat, for example. Highly processed
 
 Better times always come. But still, ingesting sugars and highly processed foods at 'a time of plenty' may also not be the treat we expect in the long run. Instead, it can turn into a delayed punishment which will take the form of weight gain and poor health outcomes.
 
-We can surely do without the convenience of ready- made foods. It takes being watchful of what we buy. Fresh single item ingredients when put together a meal can make up great dishes.
+We can surely do without the convenience of ready- made foods. It takes being watchful of what we buy. Fresh single item ingredients when put together can make up great dishes.
 Watch out for the convenience of ready made meals disguised as food, as they tend to come back to bite you. I am not sure how the word ‘convenient' came to be applied in the context of feeding ourselves poorly, but it has happened. And the danger is that it can get worse.
 
 So here is a way to really help your country and your community at this difficult time. Do not delegate your health to doctors already overwhelmed. Be that superhero to your family, your friends and fellow citizens – look after what you eat.
