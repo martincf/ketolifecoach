@@ -37,6 +37,9 @@
   p {
     margin: 1em 0;
   }
+  p:first-of-type {
+    font-weight: 700;
+  }
 }
 .research-list-item--source {
   font-size: .85em;

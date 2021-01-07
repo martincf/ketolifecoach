@@ -257,6 +257,8 @@ img { max-width: 100%; height: auto; border: 0; }
 
 .research-list-item--content p { margin: 1em 0; }
 
+.research-list-item--content p:first-of-type { font-weight: 700; }
+
 .research-list-item--source { font-size: .85em; color: #999; line-height: 1.2; margin: 1em 0 0; max-width: 75%; }
 
 @media (max-width: 480px) { .research-list-item--source { font-size: .75em; } }
