@@ -149,7 +149,7 @@ ul {
 }
 .section {
   text-align: center;
-  margin: 0 0 25px;
+  margin: 0 0 0;
   padding: 25px 0 50px;
   @include mq(small) {
     padding: 25px 0;

@@ -9,6 +9,13 @@
     padding: .5em;
   }
 }
+.research-list-item--label {
+  margin: 0 0 1em;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: $brandcolor1;
+}
 .research-list-item--title {
   margin: 0 0 .5em;
   font-size: 1.2em;

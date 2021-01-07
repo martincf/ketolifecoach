@@ -107,14 +107,14 @@
   <!-- <p class="event--maplink"><a href="https://goo.gl/maps/XzW6UxYxHHJs7qcX6">View on Google Maps</a></p> -->
 
   <p class="event--date">
-    <em>Thursday, 14th January 2021 </em>
-    <strong>7.00pm – 8.30pm</strong>
-    <button id="checkout-button-sku_GnZvzT0j8VZVrn" role="link" class="event-book--action">Book online (£10)</button>
+    <em>Thursday, 21st January 2021 </em>
+    <strong>7.00pm – 8.00pm</strong>
+    <button id="checkout-button-sku_IiMfjIhGLpE7nE" role="link" class="event-book--action">Book online (£10)</button>
   </p>
   
     <p class="event-zoom"><img src="/assets/images/logo-zoom.png" alt="Zoom" class="event-zoom--logo" /></p>
   
-  <p class="event--place"> Maximum 12 spaces – book soon! </p>
+  <p class="event--place"> Maximum 6 spaces – book soon! </p>
 
 
 <p><small>Due to COVID-19 health and safety restrictions, all workshops are conducted online using the Zoom platform.</small></p>
@@ -146,12 +146,12 @@
 (function() {
   var stripe = Stripe('pk_live_EfC0GnSUaoy2YbS6K9ZtdUq5000GF78qFj');
 
-  var checkoutButton = document.getElementById('checkout-button-sku_GnZvzT0j8VZVrn');
+  var checkoutButton = document.getElementById('checkout-button-sku_IiMfjIhGLpE7nE');
   checkoutButton.addEventListener('click', function () {
     // When the customer clicks on the button, redirect
     // them to Checkout.
     stripe.redirectToCheckout({
-      items: [{sku: 'sku_GnZvzT0j8VZVrn', quantity: 1}],
+      items: [{sku: 'sku_IiMfjIhGLpE7nE', quantity: 1}],
 
       // Do not rely on the redirect to the successUrl for fulfilling
       // purchases, customers may not always reach the success_url after
@@ -230,8 +230,11 @@
   <img src="/assets/images/ana01-square.jpg" alt="Ana" class="contact--portrait" />
   <div class="contact-details">
       <h2>Get in touch</h2>
-      <p>Contact me to discuss your needs and let's figure out how we can get your health on track!</p>
-      <p>Email info@ketolifecoach.me</p>
+      <p>Contact me (Ana) to discuss your needs and let's figure out how we can get your health back on track!</p>
+      <p><a href="mailto:info@ketolifecoach.me" class="contact--email">
+            <img src="/assets/images/icon--email.png" alt="Instagram" /> info@ketolifecoach.me
+          </a>
+</p>
   </div>
 </section>
 
