@@ -1,0 +1,34 @@
+.contact {
+  background-color: $brandcolor4;
+  padding: 50px 10% !important;
+  @include cf();
+}
+.contact--portrait {
+}
+.contact-details {
+  h2 {
+    font-size: 32px;
+  }
+  p {
+    margin: 1em 0;
+  }
+}
+.contact--email {
+  font-size: 32px;
+  @include trans-ease();
+
+  &:hover {
+    color: $brandcolor5;
+    border-bottom: 3px solid $brandcolor5;
+    transform: translateY(-2px);
+  }
+
+  @include mq(small) {
+    margin-left: 0;
+  }
+  img {
+    vertical-align: middle;
+    max-width: 24px;
+    margin-right: 2px;
+  }
+}

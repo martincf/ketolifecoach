@@ -24,9 +24,24 @@
 
 <header class="header">
   <h1 class="brand"><a href="/"><img src="/assets/images/logotype-k-bluebrown.png" alt="Keto Life Coach" class="brand--logo" /></a></h1>
-  <h2 class="strapline">
-    Effective diet &amp; lifestyle changes for age 35 plus
-  </h2>
+
+  <nav class="header--nav">
+      <ul>
+          <li><a href="/#about">About</a></li>
+          <li><a href="/#events">Workshops</a></li>
+          <li><a href="/#consultation">Consultancy</a></li>
+          <li><a href="/articles">Articles & research</a></li>
+          <li><a href="/#contact">Contact</a></li>
+      </ul>
+  </nav>
+  <div class="hamburger-wrap">
+      <button class="hamburger" type="button">
+          <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+          </span>
+      </button>
+  </div>
+
 </header>
 
 <script src="https://js.stripe.com/v3"></script>
@@ -53,6 +68,37 @@
 </main>
 
 
+
+<script>
+(function() {
+  var stripe = Stripe('pk_live_EfC0GnSUaoy2YbS6K9ZtdUq5000GF78qFj');
+
+  var checkoutButton = document.getElementById('checkout-button-sku_IiMfjIhGLpE7nE');
+  checkoutButton.addEventListener('click', function () {
+    // When the customer clicks on the button, redirect
+    // them to Checkout.
+    stripe.redirectToCheckout({
+      items: [{sku: 'sku_IiMfjIhGLpE7nE', quantity: 1}],
+
+      // Do not rely on the redirect to the successUrl for fulfilling
+      // purchases, customers may not always reach the success_url after
+      // a successful payment.
+      // Instead use one of the strategies described in
+      // https://stripe.com/docs/payments/checkout/fulfillment
+      successUrl: 'http://www.ketolifecoach.me/success',
+      cancelUrl: 'http://www.ketolifecoach.me/canceled',
+    })
+    .then(function (result) {
+      if (result.error) {
+        // If `redirectToCheckout` fails due to a browser or network
+        // error, display the localized error message to your customer.
+        var displayError = document.getElementById('error-message');
+        displayError.textContent = result.error.message;
+      }
+    });
+  });
+})();
+</script>
 
 
 <script>
@@ -90,7 +136,7 @@
 <footer class="site-footer">
   <p>
     <img src="/assets/images/logo-k-notype-transparent.png" alt="Keto Life Coach logo" class="site-footer--logo" />
-    2020 &copy; Keto Life Coach
+    2021 &copy; Keto Life Coach
     <span class="site-footer--terms">
       <a href="/disclaimer">Disclaimer</a>
     </span>

@@ -4,7 +4,6 @@
   padding: 65% 9% 50px 9%;
   background: transparent url(/assets/images/hero1.jpg) 0 -100px no-repeat; // Image attribution: Brooke Lark – Unsplash – brooke-lark-jUPOXXRNdcA-unsplash
   background-size: contain;
-
   @include mq(small) {
     background-size: contain;
     background-position: 0 -100px;

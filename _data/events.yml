@@ -10,3 +10,16 @@
 #     - date: "Wed, 15th July 2020"
 #       time: 7.30pm - 8.30pm
 #       sku_id: sku_Gna1mLtsgt9TJQ
+event:
+  title: Introduction to keto
+  place: Maximum 6 spaces – book soon!
+  maplink: https://goo.gl/maps/XzW6UxYxHHJs7qcX6
+  price: 10
+  zoom: true
+  dates:
+    - date: "Thursday, 21st January 2021"
+      time: 7.00pm – 8.00pm
+      sku_id: sku_IiMfjIhGLpE7nE
+    # - date: "Wed, 15th July 2021"
+    #   time: 7.30pm - 8.30pm
+    #   sku_id: sku_Gna1mLtsgt9TJQ

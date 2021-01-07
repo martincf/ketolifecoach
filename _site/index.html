@@ -24,12 +24,30 @@
 
 <header class="header">
   <h1 class="brand"><a href="/"><img src="/assets/images/logotype-k-bluebrown.png" alt="Keto Life Coach" class="brand--logo" /></a></h1>
-  <h2 class="strapline">
-    Effective diet &amp; lifestyle changes for age 35 plus
-  </h2>
+
+  <nav class="header--nav">
+      <ul>
+          <li><a href="/#about">About</a></li>
+          <li><a href="/#events">Workshops</a></li>
+          <li><a href="/#consultation">Consultancy</a></li>
+          <li><a href="/articles">Articles & research</a></li>
+          <li><a href="/#contact">Contact</a></li>
+      </ul>
+  </nav>
+  <div class="hamburger-wrap">
+      <button class="hamburger" type="button">
+          <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+          </span>
+      </button>
+  </div>
+
 </header>
 
 <section class="hero">
+  <h2 class="strapline">
+    Effective diet &amp; lifestyle changes for age 35 plus
+  </h2>
   <h1 class="hero--title">
     Losing weight is not vanity, it's a life necessity!
   </h1>
@@ -46,7 +64,7 @@
 
 <div class="hero-ctas">
   <button class="hero-ctas--cta">
-    <a href="#events">Upcoming workshops</a>
+    <a href="#events">Online workshops</a>
   </button>
   <button class="hero-ctas--cta">
     <a href="#consultation">Consultation options</a>
@@ -54,7 +72,7 @@
 </div>
 
 <section class="cols col3 splash">
-    <div class="col col-content">
+    <div class="col col-content" id="about">
       <h2>What is keto?</h2>
       <p>Keto is a diet that works for everybody, following a very simple protocol. A ketogenic diet is not new, it is not a fad diet,  and it is not expensive. It is a sustainable,  and delightful way of eating that your body will love.</p>
       <p>The diet works by forcing your body to use fat instead of ingested carbohydrates for fuel. In a nutshell, you will be losing weight rapidly, with no hunger and you will feel great long-term benefits in a sustainable way.</p>
@@ -78,14 +96,30 @@
 </section>
 
 <script src="https://js.stripe.com/v3"></script>
-<section class="intersection">
+<!-- <section class="intersection">
   <img src="/assets/images/ana01-w1200.jpg" alt="Ana" class="intersection--hero" />
-</section>
+</section> -->
 <section class="section" id="events">
-  <h2 class="section--header">Upcoming workshops</h2>
+  <h2 class="section--header">Online workshops</h2>
   <div class="event">
     
-  <h2>Sorry, there are no events scheduled at this time.</h2>
+  <h3 class="section--title">Introduction to keto</h3>
+  <!-- <p class="event--maplink"><a href="https://goo.gl/maps/XzW6UxYxHHJs7qcX6">View on Google Maps</a></p> -->
+
+  <p class="event--date">
+    <em>Thursday, 21st January 2021 </em>
+    <strong>7.00pm – 8.00pm</strong>
+    <button id="checkout-button-sku_IiMfjIhGLpE7nE" role="link" class="event-book--action">Book online (£10)</button>
+  </p>
+  
+    <p class="event-zoom"><img src="/assets/images/logo-zoom.png" alt="Zoom" class="event-zoom--logo" /></p>
+  
+  <p class="event--place"> Maximum 6 spaces – book soon! </p>
+
+
+<p><small>Due to COVID-19 health and safety restrictions, all workshops are conducted online using the Zoom platform.</small></p>
+
+<div id="error-message" class="event--error">I'm sorry but something seems to have gone with the booking process. Please <a href="mailto:info@ketolifecoach.me">email me</a> if you see this message and I'll help out.</div>
 
 
   </div>
@@ -93,7 +127,7 @@
 
 <section class="section virtualevents" id="consultation">
   <div class="event">
-    <h2 class="section--header">Online consultations</h2>
+    <h2 class="section--header">One-to-one consultation</h2>
     <h3 class="section--title">Personal intro to keto</h3>
     <p class="event--place">Skype, Zoom, Facetime, or Google Meet</p>
     <p class="event--date">
@@ -107,6 +141,37 @@
   </div>
 </section>
 
+
+<script>
+(function() {
+  var stripe = Stripe('pk_live_EfC0GnSUaoy2YbS6K9ZtdUq5000GF78qFj');
+
+  var checkoutButton = document.getElementById('checkout-button-sku_IiMfjIhGLpE7nE');
+  checkoutButton.addEventListener('click', function () {
+    // When the customer clicks on the button, redirect
+    // them to Checkout.
+    stripe.redirectToCheckout({
+      items: [{sku: 'sku_IiMfjIhGLpE7nE', quantity: 1}],
+
+      // Do not rely on the redirect to the successUrl for fulfilling
+      // purchases, customers may not always reach the success_url after
+      // a successful payment.
+      // Instead use one of the strategies described in
+      // https://stripe.com/docs/payments/checkout/fulfillment
+      successUrl: 'http://www.ketolifecoach.me/success',
+      cancelUrl: 'http://www.ketolifecoach.me/canceled',
+    })
+    .then(function (result) {
+      if (result.error) {
+        // If `redirectToCheckout` fails due to a browser or network
+        // error, display the localized error message to your customer.
+        var displayError = document.getElementById('error-message');
+        displayError.textContent = result.error.message;
+      }
+    });
+  });
+})();
+</script>
 
 
 <script>
@@ -161,63 +226,22 @@
   <p class="event-book"><button class="event-book--action"><a href="mailto:info@ketolifecoach.me?subject=Consultation&#32;booking&#32;request">Request a consultation</a></button></p>
 </section>
 
-<section class="section moreinfo">
-  <h2 class="section--header">Further info</h2>
-  <h2 class="section--title">Getting to know keto</h2>
-  <p class="section--intro">Some useful info so you can start this journey and make an informed decision about taking control of your body.</p>
-  <div class="moreinfo-list">
-     <!-- Get everything in the facts file -->
-    <aside class="moreinfo-list-item">
-      <h3 class="moreinfo-list-item--title">Why are we becoming obese?</h3>
-      <p class="moreinfo-list-item--desc"><p>Simply put, because we have lost track of the pleasure and nutrition a meal can really provide. Sometimes, we eat absent-mindedly. With help and little effort you can break this cycle.  And you won’t miss the inflammation processed food and refined carbohydrates can cause!</p>
-
-<p>We get hungry when we are malnourished (and most obese people are); when we are thirsty; and, when we don’t receive the body’s signalling of satiety. Sometimes we eat for comfort, to improve our mood – because we all want to keep smiling and we all want to be happy.</p>
-
-<p>We eat at special occasions to celebrate life too. Once you embrace a ketogenic lifestyle you won’t need to restrain yourself from food, constantly worrying about portion sizes. You will know about better choices, you will  know how your body works and take ownership of  every aspect of your health.</p>
+<section class="contact col2" id="contact">
+  <img src="/assets/images/ana01-square.jpg" alt="Ana" class="contact--portrait" />
+  <div class="contact-details">
+      <h2>Get in touch</h2>
+      <p>Contact me (Ana) to discuss your needs and let's figure out how we can get your health back on track!</p>
+      <p><a href="mailto:info@ketolifecoach.me" class="contact--email">
+            <img src="/assets/images/icon--email.png" alt="Instagram" /> info@ketolifecoach.me
+          </a>
 </p>
-    </aside>
-     <!-- Get everything in the facts file -->
-    <aside class="moreinfo-list-item">
-      <h3 class="moreinfo-list-item--title">Insulin resistance</h3>
-      <p class="moreinfo-list-item--desc"><p>Keto is an incredible  tool to help you regain control of your weight and your blood sugar levels.  By simply changing your eating habits your body will access fat for fuel.</p>
-
-<p>You will learn how to block the constant hunger and to stop the perpetual flow of carbohydrates which triggers monumental levels of insulin. When the body becomes a fat burning machine it produces ketones. The more fat adapted we become the higher  the levels of ketones, the lower the levels of insulin.</p>
-
-<p>There are several ways to measure your ketones levels. You can verify ketosis with different methods but the magic is when you can teach your body to deliver ketones at will, effortlessly. The signs will be clear: less hunger, weight loss, and more energy.</p>
-</p>
-    </aside>
-     <!-- Get everything in the facts file -->
-    <aside class="moreinfo-list-item">
-      <h3 class="moreinfo-list-item--title">Keto anti-inflammatory properties</h3>
-      <p class="moreinfo-list-item--desc"><p>Inflammation is the main indicator of disease in the body, meaning that the more inflamed we are  (and continue to be) the poorer our health outcomes.</p>
-
-<p>A ketogenic diet reduces this inflammatory process by replacing the sugars and carbohydrates of your diet, with nutrient rich alternatives.</p>
-
-<p>Ketones have anti-inflammatory properties on themselves. By taking simple steps in the choice and preparation of your food, you can influence your health markers.</p>
-
-<p>By learning how to address what causes harm to the body and contributes to poor health you will be able to tackle what matters most, your well-being and longevity.</p>
-</p>
-    </aside>
-     <!-- Get everything in the facts file -->
-    <aside class="moreinfo-list-item">
-      <h3 class="moreinfo-list-item--title">Is keto safe?</h3>
-      <p class="moreinfo-list-item--desc"><p>There is sufficient research to suggest that a ketogenic diet is perfectly safe for most individuals, leading to improvement of bio-markers correlated to good health. The reduction of carbohydrate intake to levels that induce ketosis can lead to significant benefits in blood sugar levels and lipid profiles and as a consequence reduce insulin resistance and the risks of metabolic syndrome.</p>
-
-<p>Additionally, there is overwhelming evidence that indicates that obesity is a risk factor for heart disease, stroke, cancer, and degenerative neurological illnesses.</p>
-
-<p>The potential therapeutic roles of ketogenic diets have been widely investigated and strong evidence supports its effectiveness. But there is still no unanimous concordance concerning its particular mechanisms and safety.
-What seems evident is the danger of obesity to health.</p>
-</p>
-    </aside>
-    
   </div>
-  <p class="link--research"><a href="/research">More useful research papers</a></p>
 </section>
 
 <footer class="site-footer">
   <p>
     <img src="/assets/images/logo-k-notype-transparent.png" alt="Keto Life Coach logo" class="site-footer--logo" />
-    2020 &copy; Keto Life Coach
+    2021 &copy; Keto Life Coach
     <span class="site-footer--terms">
       <a href="/disclaimer">Disclaimer</a>
     </span>

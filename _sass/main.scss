@@ -4,6 +4,7 @@
         "mixins",
         "colours",
         "header",
+        "nav",
         "hero",
         "splash",
         "events",
@@ -11,7 +12,9 @@
         "moreinfo",
         "footer",
         "page",
-        "research";
+        "posts",
+        "research",
+        "contact";
 
 $backgroundColor: $brandcolor3;
 $bodyColor: #222;
@@ -146,7 +149,7 @@ ul {
 }
 .section {
   text-align: center;
-  margin: 0 0 25px;
+  margin: 0 0 0;
   padding: 25px 0 50px;
   @include mq(small) {
     padding: 25px 0;
@@ -185,6 +188,9 @@ ul {
   @include mq(narrow) {
     font-size: .85em;
   }
+}
+.intersection {
+
 }
 .intersection--hero {
   width: 100%;

@@ -1,0 +1,18 @@
+.posts {
+  padding: 3em;
+  background-color: white;
+}
+.post {
+
+}
+.post-content {
+    background-color: transparentize($brandcolor4,0.2);
+    padding: 3em;
+    margin: 25px auto;
+    text-align: left;
+    max-width: 960px;
+    @include mq(narrow) {
+      padding: .5em;
+    }
+
+}

@@ -1,5 +1,22 @@
+
+{% for post in site.posts %}
+<aside class="research-list-item">
+  <h2 class="research-list-item--label">My thoughts</h2>
+  <h3 class="research-list-item--title">{{ post.title }}</h3>
+  <div class="research-list-item--content">{{ post.content | markdownify }}</div>
+  <p class="research-list-item--source">{{ post.source }}</p>
+  {% if post.link != nil %}
+  <p class="research-list-item--link"><a href="{{ post.link }}">View research</a></p>
+  {% endif %}
+</aside>
+{% endfor %}
+
+
+
 {% for item in site.data.research %} <!-- Get everything in the research file -->
+
   <aside class="research-list-item">
+    <h2 class="research-list-item--label">Scientific paper or research</h2>
     <h3 class="research-list-item--title">{{ item.title }}</h3>
     <div class="research-list-item--desc">{{ item.desc | markdownify }}</div>
     <p class="research-list-item--source">{{ item.source }}</p>

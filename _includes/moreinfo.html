@@ -1,7 +1,8 @@
-<section class="section moreinfo">
-  <h2 class="section--header">Further info</h2>
+<section class="section moreinfo" id="articles">
+  <h2 class="section--header">Articles & useful research</h2>
   <h2 class="section--title">Getting to know keto</h2>
   <p class="section--intro">Some useful info so you can start this journey and make an informed decision about taking control of your body.</p>
+
   <div class="moreinfo-list">
     {% for item in site.data.facts %} <!-- Get everything in the facts file -->
     <aside class="moreinfo-list-item">
@@ -10,5 +11,5 @@
     </aside>
     {% endfor %}
   </div>
-  <p class="link--research"><a href="/research">More useful research papers</a></p>
+  <p class="link--research"><a href="/articles">More useful research papers</a></p>
 </section>

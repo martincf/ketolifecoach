@@ -2,15 +2,20 @@
   <h2>Sorry, there are no events scheduled at this time.</h2>
 {% else %}
   <h3 class="section--title">{{ site.data.events.event.title }}</h3>
-  <p class="event--place"> {{ site.data.events.event.place }} </p>
-  <p class="event--maplink"><a href="{{ site.data.events.event.maplink }}">View on Google Maps</a></p>
+  <!-- <p class="event--maplink"><a href="{{ site.data.events.event.maplink }}">View on Google Maps</a></p> -->
 {% for item in site.data.events.event.dates %}
   <p class="event--date">
-    <em>{{ item.time }} {{ item.date }} </em>
+    <em>{{ item.date }} </em>
+    <strong>{{ item.time }}</strong>
     <button id="checkout-button-{{ item.sku_id }}" role="link" class="event-book--action">Book online (£{{ site.data.events.event.price }})</button>
   </p>
+  {% if site.data.events.event.zoom == true %}
+    <p class="event-zoom"><img src="{{ p.url | prepend: site.baseurl }}/assets/images/logo-zoom.png" alt="Zoom" class="event-zoom--logo" /></p>
+  {% endif %}
+  <p class="event--place"> {{ site.data.events.event.place }} </p>
+
 {% endfor %}
-<p><small>Small groups, book soon.</small></p>
+<p><small>Due to COVID-19 health and safety restrictions, all workshops are conducted online using the Zoom platform.</small></p>
 
 <div id="error-message" class="event--error">I'm sorry but something seems to have gone with the booking process. Please <a href="mailto:info@ketolifecoach.me">email me</a> if you see this message and I'll help out.</div>
 {% endif %}
