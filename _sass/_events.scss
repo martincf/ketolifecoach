@@ -92,3 +92,20 @@
 .event-zoom--logo {
   max-width: 100px;
 }
+.event--full {
+  z-index: 0;
+  margin: 25px auto;
+  max-width: 50%;
+  padding: 25px;
+  color: white;
+  font-weight: 700;
+  background-color: $brandcolor5;
+  // transform: rotate(-2deg);
+  @include mq(small) {
+    max-width: 70%;
+  }
+  @include mq(narrow) {
+    max-width: 80%;
+  }
+
+}

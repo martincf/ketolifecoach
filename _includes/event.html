@@ -7,7 +7,11 @@
   <p class="event--date">
     <em>{{ item.date }} </em>
     <strong>{{ item.time }}</strong>
+    {% if site.data.events.event.full == true %}
+    <p class="event--full">Sorry, this event is fully booked</p>
+    {% else %}
     <button id="checkout-button-{{ item.sku_id }}" role="link" class="event-book--action">Book online (£{{ site.data.events.event.price }})</button>
+    {% endif %}
   </p>
   {% if site.data.events.event.zoom == true %}
     <p class="event-zoom"><img src="{{ p.url | prepend: site.baseurl }}/assets/images/logo-zoom.png" alt="Zoom" class="event-zoom--logo" /></p>

@@ -16,6 +16,7 @@ event:
   maplink: https://goo.gl/maps/XzW6UxYxHHJs7qcX6
   price: 10
   zoom: true
+  full: true
   dates:
     - date: "Thursday, 21st January 2021"
       time: 7.00pm – 8.00pm

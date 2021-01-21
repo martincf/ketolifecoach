@@ -151,6 +151,12 @@ img { max-width: 100%; height: auto; border: 0; }
 
 .event-zoom--logo { max-width: 100px; }
 
+.event--full { z-index: 0; margin: 25px auto; max-width: 50%; padding: 25px; color: white; font-weight: 700; background-color: #C03433; }
+
+@media (max-width: 800px) { .event--full { max-width: 70%; } }
+
+@media (max-width: 480px) { .event--full { max-width: 80%; } }
+
 .consultation { background-color: rgba(255, 255, 255, 0.25); }
 
 .consultation-prices { width: 72%; margin: 50px auto; text-align: left; padding: 0; font-size: 1.25em; border-top: 1px solid #d7c400; }
